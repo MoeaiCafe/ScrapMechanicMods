@@ -1,0 +1,242 @@
+{
+	"ModLightY":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 50.0,					//射程
+			"coneFade": 0.5,				//边缘模糊
+			"coneAngle": 35.0,				//散射角度
+			"intensity": 2.0,				//光照强度
+			"ambient": true,				//是否环境照射
+			"ambientPosScale": 0.25,		//环境照射坐标
+			"ambientIntensityScale": 0.25,	//环境照射强度
+			"ambientRangeScale": 1.0,		//环境照射射程
+			"shadowMode": 2					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 0.0, "y": 1.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightZ":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 50.0,					//射程
+			"coneFade": 0.5,				//边缘模糊
+			"coneAngle": 35.0,				//散射角度
+			"intensity": 2.0,				//光照强度
+			"ambient": true,				//是否环境照射
+			"ambientPosScale": 0.25,		//环境照射坐标
+			"ambientIntensityScale": 0.3,	//环境照射强度
+			"ambientRangeScale": 0.5,		//环境照射射程
+			"shadowMode": 2					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 0.0, "y": 0.0, "z": 1.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightZ_B":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 50.0,					//射程
+			"coneFade": 0.5,				//边缘模糊
+			"coneAngle": 45.0,				//散射角度
+			"intensity": 2.0,				//光照强度
+			"ambient": true,				//是否环境照射
+			"ambientPosScale": 0.25,		//环境照射坐标
+			"ambientIntensityScale": 0.5,	//环境照射强度
+			"ambientRangeScale": 0.5,		//环境照射射程
+			"shadowMode": 2					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 0.0, "y": 0.0, "z": 1.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightTZ":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 90.0,					//射程
+			"coneFade": 0.2,				//边缘模糊
+			"coneAngle": 5.0,				//散射角度
+			"intensity": 2.0,				//光照强度
+			"ambient": true,				//是否环境照射
+			"ambientPosScale": 0.25,		//环境照射坐标
+			"ambientIntensityScale": 0.2,	//环境照射强度
+			"ambientRangeScale": 1.0,		//环境照射射程
+			"shadowMode": 2					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 0.0, "y": 0.0, "z": 1.0 },
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.2 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightJingShi":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 15.0,					//射程
+			"coneFade": 0.5,				//边缘模糊
+			"coneAngle": 40.0,				//散射角度
+			"intensity": 1.8,				//光照强度
+			"ambient": true,				//是否环境照射
+			"ambientPosScale": 0.1,			//环境照射坐标
+			"ambientIntensityScale": 0.2,	//环境照射强度
+			"ambientRangeScale": 0.5,		//环境照射射程
+			"shadowMode": 2					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 1.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": -1.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightNone":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 0.0,					//射程
+			"coneFade": 0.0,				//边缘模糊
+			"coneAngle": 0.0,				//散射角度
+			"intensity": 0.0,				//光照强度
+			"ambient": false,				//是否环境照射
+			"ambientPosScale": 0.0,			//环境照射坐标
+			"ambientIntensityScale": 0.0,	//环境照射强度
+			"ambientRangeScale": 0.0,		//环境照射射程
+			"shadowMode": 0					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightPoint":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"radius": 10.0,
+			"intensity": 1.0,
+			"ambient": true,
+			"ambientIntensityScale": 1.0,
+			"ambientRangeScale": 2.0
+		},
+		"effectList":
+		[
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"ModLightPointYellow":
+	{
+		"parameterList":
+		{
+			"color": "FFFF00",
+			"luminance": 1.0,
+			"radius": 10.0,
+			"intensity": 1.0,
+			"ambient": true,
+			"ambientIntensityScale": 1.0,
+			"ambientRangeScale": 2.0
+		},
+		"effectList":
+		[
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"ModLightYZ":
+	{
+		"parameterList":
+		{
+			"color": "FFFFFF",
+			"luminance": 1.0,
+			"range": 50.0,					//射程
+			"coneFade": 0.5,				//边缘模糊
+			"coneAngle": 40.0,				//散射角度
+			"intensity": 2.0,				//光照强度
+			"ambient": true,				//是否环境照射
+			"ambientPosScale": 0.25,		//环境照射坐标
+			"ambientIntensityScale": 0.25,	//环境照射强度
+			"ambientRangeScale": 1.0,		//环境照射射程
+			"shadowMode": 2					//阴影模式
+		},
+		"effectList":
+		[
+			{
+				"type": "spotLight",
+				"name": "",
+				"direction": { "x": 0.0, "y": 1.0, "z": 1.0 },
+				"delay": 0.0
+			}
+		]
+	}
+}

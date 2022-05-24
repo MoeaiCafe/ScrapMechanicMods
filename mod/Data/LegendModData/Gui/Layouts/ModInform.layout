@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="LogicGateBG" name="MainPanel" position_real="0.2 0.2 0.6 0.5">
+	
+		<Widget type="TextBox" skin="TextBox" position_real="0 0 1 0.26">
+            <Property key="Caption" value="模组信息 Mod Information" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="X_Hud_Alert" />
+        </Widget>
+        <Widget type="TextBox" skin="TextBox" position_real="0 0 1 0.41">
+			<Property key="Caption" value="版本Version: 3.1.7           更新于Updated at: 2022/2/25" />
+			<Property key="Alpha" value="0.5" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_SubHeader" />
+        </Widget>
+		
+		<Widget type="TextBox" skin="TextBox" position_real="0 0 1 0.7">
+            <Property key="Caption" value="关于传奇建造队与传奇Mod" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="X_Hud_Alert" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0.08 0.4 1 1">
+            <Property key="Caption" value="      传奇建造队是2016年4月2日由一众废品机械师爱好者成立的游戏玩家团队，历经多年发展已成为" />
+            <Property key="TextAlign" value="Default" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0.08 0.45 1 1">
+            <Property key="Caption" value="横跨四个千人交流群的国内大型玩家团体，团体中的玩家秉持着对游戏的热爱，无限挖掘着废品机械师" />
+            <Property key="TextAlign" value="Default" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0.08 0.5 1 1">
+            <Property key="Caption" value="这款游戏的潜力与可能，突破着游戏的技术与外形建造的上限，而传奇Mod就由此诞生于2016年的5月21日，" />
+            <Property key="TextAlign" value="Default" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0.08 0.55 1 1">
+            <Property key="Caption" value="目前传奇Mod已成长为创意工坊总订阅量第四，物品丰富度与体量第一的Mod，包含各类常用零件物品的" />
+            <Property key="TextAlign" value="Default" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0.08 0.6 1 1">
+            <Property key="Caption" value="大型综合性游戏模组，也成为了在废品机械师这款游戏中，中国玩家的智慧结晶与骄傲的象征！" />
+            <Property key="TextAlign" value="Default" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		
+		<Widget type="TextBox" skin="TextBox" position_real="0 0 1 1.5">
+            <Property key="Caption" value="传奇建造队交流QQ群" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="X_Hud_Alert" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0 0 1 1.65">
+            <Property key="Caption" value="-国内最大的废品机械师玩家技术交流群-" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		<Widget type="TextBox" skin="TextBox" position_real="0 0 1 1.77">
+            <Property key="Caption" value="一群 537532878    二群 158484814    三群 474178046    四群 633703984" />
+            <Property key="TextAlign" value="Center" />
+            <Property key="FontName" value="SM_SubHeader" />
+			<Property key="Alpha" value="0.5" />
+        </Widget>
+		
+		
+		
+    </Widget>
+    <CodeGeneratorSettings />
+</MyGUI>

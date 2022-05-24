@@ -1,0 +1,2171 @@
+{
+	"rotationSet": [
+	
+		/*X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X*/
+		/*====================================================================*/
+		/*                      Legend Rotationsets Library                    */
+		/*                      Served for Legend Mod 1.4                     */
+		/*                               2016.11.6                             */
+		/*                         Made by David Sirius                       */
+		/*====================================================================*/
+		
+		
+		/*================Turn by Propping on Sitcky Surface绕粘结面旋转============*/ 
+		/*----------------------------1 Sitcky Surface-------------------------*/
+		{
+			"name": "T_-X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" }		
+			]
+		},
+		{
+			"name": "T_+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }
+			]
+		},
+
+		{
+			"name": "T_-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }
+			]
+		},
+		{
+			"name": "T_+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		/*----------------------------2 Sitcky Surfaces-------------------------*/
+		{
+			"name": "T_-X+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }		
+			]
+		},
+		{
+			"name": "T_-X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_-X-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-X+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_+X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_+X+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_+X-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_+X+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		/*----------------------------3 Sitcky Surfaces-------------------------*/
+		{
+			"name": "T_-X+X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+X+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+X-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-X+X+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_-X+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-X+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_+X-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_+X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_+X-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+
+		{
+			"name": "T_+X+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_+X+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_+X-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+
+
+			]
+		},
+		{
+			"name": "T_+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+
+
+			]
+		},
+
+		/*----------------------------4 Sitcky Surfaces-------------------------*/
+		{
+			"name": "T_-X+X-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-X+X-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+X+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+X+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X+X-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "T_-X-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "T_-X-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-X+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_-X-Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },	
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }
+			]
+		},
+		{
+			"name": "T_+X-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },		
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_+X-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_+X-Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+	
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }
+
+
+			]
+		},
+		{
+			"name": "T_-Y+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },		
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		/*----------------------------5 Sitcky Surfaces-------------------------*/
+		{
+			"name": "T_-X+X-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },	
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "T_-X+X-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },	
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" }	,	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_-X+X-Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },	
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_-X+X+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_-X-Y+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "T_+X-Y+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },	
+
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },	
+
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },	
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },	
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		/*----------------------------6 Sitcky Surfaces-------------------------*/
+		{
+			"name": "T_All",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },	
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" },
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },
+
+
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" }
+
+
+			]
+		},
+		/*=====================Change Sticky Surface切换粘结面====================*/ 
+		/*----------------------------2 Sitcky Surfaces-------------------------*/
+		{
+			"name": "C_-X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_-X-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "C_-X+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_+X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_+X+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_+X-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+X+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }		
+			]
+		},
+		/*----------------------------3 Sitcky Surfaces-------------------------*/
+		{
+			"name": "C_-X+X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "X", "east": "-Z" },
+				{ "south": "X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+X+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+X-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "C_-X+X+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_-X+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "C_-X+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+X-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_+X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+X-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+
+		{
+			"name": "C_+X+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+X+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+X-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },                        
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		/*----------------------------4 Sitcky Surfaces-------------------------*/
+		{
+			"name": "C_-X+X-Y+Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "C_-X+X-Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+X+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+X+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X+X-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }				
+			]
+		},
+		{
+			"name": "C_-X-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "X" }, 
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }			
+			]
+		},
+		{
+			"name": "C_-X-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "C_-X+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_+X-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_+X-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_-Y+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		/*----------------------------5 Sitcky Surfaces-------------------------*/
+		{
+			"name": "C_-X+X-Y+Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "Y" }		
+			]
+		},
+		{
+			"name": "C_-X+X-Y+Y+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_-X+X-Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_-X+X+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_-X-Y+Y-Z+Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		{
+			"name": "C_+X-Y+Y-Z+Z",
+			"prop": true,
+			"rotation": [                    
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+		/*----------------------------6 Sitcky Surfaces-------------------------*/
+		{
+			"name": "C_ALL",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "Y" }	
+			]
+		},
+
+		/*============== Change Sitcky Surfaces of One Axis 切换粘结面所在轴的对向粘结面 ==========*/
+		{
+			"name": "C_X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-Y", "east": "-Z" }			
+			]
+		},
+		{
+			"name": "C_Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "Y", "east": "X" }		
+			]
+		},
+		{
+			"name": "C_Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "-Z", "east": "X" }			
+			]
+		},
+		/*============================Polygons几何体==================================*/
+		{
+			"name": "P_-Y-Z-X+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	                     	
+			]
+		},
+		
+		{
+			"name": "P_+Z-Y-X+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	                     	
+			]
+		},
+		
+		{
+			"name": "P_-X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }	                     	
+			]
+		},
+		
+		{
+			"name": "P_-Y-X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" }                  	
+			]
+		},
+		
+		{
+			"name": "P_JZF1X2_-Y-Z",
+			"prop": true,
+			"rotation": [
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" }
+			]
+		},
+		
+		{
+			"name": "P_TBF1X1_-X-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }
+				
+
+			]
+		},
+		
+		{
+			"name": "P_TBF1X2_-X-Y-Z",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" }
+			]
+		},
+		
+		{
+			"name": "P_-Z+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }
+			]
+		},
+		/*========================== Special 特殊顺序===================================*/
+		
+		{
+			"name": "S_+Z-Z-X+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }                       	
+			]
+		},
+		
+		{
+			"name": "S_-Z-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }
+
+
+			]
+		},
+		
+		{
+			"name": "S_+Z-Y",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" }
+
+
+			]
+		},
+		
+		{
+			"name": "S_-Y-X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" }
+
+
+			]
+		},
+		
+		{
+			"name": "S_-Z-X+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }                      			
+			]
+		},
+		
+		{
+			"name": "S_+Z-X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }                      			
+			]
+		},
+		
+		{
+			"name": "S_+Z-X+X",
+			"prop": true,
+			"rotation": [
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				{ "south": "X", "east": "-Z" }                      			
+			]
+		},
+		{
+			"name": "S_Logic",
+			"prop": true,
+			"rotation": [                                         	   
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "-Y", "east": "Z" },
+				{ "south": "X", "east": "Z" }
+			]
+		},
+
+		
+		
+		/*=================================D定制========================================*/
+		
+		{
+			"name": "D_BeiDaiZuoYi",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "Y" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" }
+				
+			]
+		},
+		{
+			"name": "D_ZhuangShiHua",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "Y" },
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" }
+				
+			]
+		},
+		{
+			"name": "D_ZiFuFangKuai",
+			"prop": true,
+			"rotation": [
+				{ "south": "Z", "east": "X" },
+				{ "south": "Z", "east": "-Y" },
+				{ "south": "Z", "east": "-X" },
+				{ "south": "Z", "east": "Y" },
+				
+				{ "south": "-Z", "east": "-X" },
+				{ "south": "-Z", "east": "Y" },
+				{ "south": "-Z", "east": "X" },
+				{ "south": "-Z", "east": "-Y" },
+				
+				{ "south": "X", "east": "-Z" },
+				{ "south": "-Y", "east": "-Z" },
+				{ "south": "-X", "east": "-Z" },
+				{ "south": "Y", "east": "-Z" },
+				
+				{ "south": "-X", "east": "Z" },
+				{ "south": "Y", "east": "Z" },
+				{ "south": "X", "east": "Z" },
+				{ "south": "-Y", "east": "Z" },				
+				
+				{ "south": "-Y", "east": "X" },
+				{ "south": "-X", "east": "-Y" },
+				{ "south": "Y", "east": "-X" },
+				{ "south": "X", "east": "Y" },
+				
+				{ "south": "-Y", "east": "-X" },
+				{ "south": "-X", "east": "Y" },
+				{ "south": "Y", "east": "X" },
+				{ "south": "X", "east": "-Y" }
+
+
+			]
+		}
+
+
+		/*X-X-X-X-X-X-X-X-X-X-X-X-Legend Rotationsets Library-X-X-X-X-X-X-X-X-X-X-X*/
+	]
+}

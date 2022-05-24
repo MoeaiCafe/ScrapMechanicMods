@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="BackgroundPromptNarrow" position="0 0 518 505" name="BackPanel">
+        <Widget type="TextBox" skin="TextBox" position="59 65 400 29" name="Title">
+            <Property key="Caption" value="CONNECTIONS座椅连接信息"/>
+            <Property key="TextAlign" value="Center"/>
+            <Property key="FontName" value="X_Hud_Alert"/>
+        </Widget>
+        <Widget type="Widget" skin="PanelEmpty" position="109 115 350 297">
+            <Widget type="TextBox" skin="TextBox" position="0 0 30 28">
+                <Property key="Caption" value="1"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 30 30 28">
+                <Property key="Caption" value="2"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 60 30 28">
+                <Property key="Caption" value="3"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 90 30 28">
+                <Property key="Caption" value="4"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 120 30 28">
+                <Property key="Caption" value="5"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 150 30 28">
+                <Property key="Caption" value="6"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 180 30 28">
+                <Property key="Caption" value="7"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 210 30 28">
+                <Property key="Caption" value="8"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 240 30 28">
+                <Property key="Caption" value="9"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="0 270 30 28">
+                <Property key="Caption" value="10"/>
+                <Property key="TextAlign" value="Center"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 0 320 28" name="Con1">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 30 320 28" name="Con2">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 60 320 28" name="Con3">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 90 320 28" name="Con4">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 120 320 28" name="Con5">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 150 320 28" name="Con6">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 180 320 28" name="Con7">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 210 320 28" name="Con8">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 240 320 28" name="Con9">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+            <Widget type="TextBox" skin="TextBox" position="30 270 320 28" name="Con10">
+                <Property key="TextAlign" value="Left VCenter"/>
+                <Property key="FontName" value="SM_SubHeader"/>
+            </Widget>
+        </Widget>
+    </Widget>
+</MyGUI>

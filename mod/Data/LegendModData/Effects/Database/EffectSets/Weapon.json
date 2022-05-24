@@ -1,0 +1,841 @@
+{
+	"Cannon1Shot":
+	{
+		"maxInstances": 64,
+		"parameterList":
+		{
+			"Size": 0.5,
+			"color": "fff152",
+			"radius": 18.0,
+			"intensity": 2.0,
+			"shakeStrength": 0.5,
+			"shakeRadius": 8.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":0.0 },
+					{ "time":0.1, "value":20.0 },
+					{ "time":0.6, "value":0.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "cannonshot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "cannonshotfire",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"attached": true,
+				"delay": 0.0
+			},
+
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			
+			{
+				"type": "cameraShake",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"shakeStrength",
+					"shakeRadius"
+				],
+				"duration": 0.1,
+				"delay": 0.0
+			},
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"Size"
+				],
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"Cannon2Shot":
+	{
+		"parameterList":
+		{
+			"color": "fff152",
+			"radius": 4.0,
+			"intensity": 2.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "PotatoRifle - Shoot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "p_spudgun_basic_muzzel",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+
+	"AirCannonShell":
+	{
+		"parameterList":
+		{
+			"Size": 0.5, 
+			"color": "007fff",
+			"radius": 16.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":0.0 },
+					{ "time":0.1, "value":15.0 },
+					{ "time":0.6, "value":0.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"Size"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "aircannonshell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"Cannon1Shell":
+	{
+		"parameterList":
+		{
+			"Size": 16.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "fff152",
+			"radius": 2.0,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "cannon1shell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"Cannon2Shell":
+	{
+		"parameterList":
+		{
+			"Size": 16.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "fff152",
+			"radius": 1.0,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "cannon2shell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"JuPao1Shell":
+	{
+		"parameterList":
+		{
+			"Size": 16.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "fff152",
+			"radius": 3.0,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "jupao1shell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"JuPao2Shell":
+	{
+		"parameterList":
+		{
+			"Size": 16.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "fff152",
+			"radius": 4.0,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "jupao2shell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"JuPao3Shell":
+	{
+		"parameterList":
+		{
+			"Size": 16.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "fff152",
+			"radius": 5.0,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "jupao3shell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"PaiJiPaoShell":
+	{
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "paijipaoshell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"PaiJiPaoShot":
+	{
+		"parameterList":
+		{
+			"color": "fff152",
+			"radius": 4.0,
+			"intensity": 1.0
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "PotatoRifle - Shoot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "p_spudgun_basic_muzzel",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+	"HuoJianDanShell":
+	{
+		"parameterList":
+		{
+			"color": "fff152",
+			"radius": 2.0,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "huojiandanshell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	"HuoJianDanShot":
+	{
+		"parameterList":
+		{
+			"velocity":0.0,
+			"power":0.0,
+			"color":"fff152",
+			"radius":3.0,
+			"intensity":1.5
+		},
+		"parameterCurves":{
+			"radius":
+			{
+				"timeline":
+				[
+					{"time":0.02,"value":4.0},
+					{"time":0.4,"value":0.0}
+				]
+			},
+			"intensity":
+			{
+				"timeline":
+				[
+					{"time":0.02,"value":1.5},
+					{"time":0.3,"value":0.0}
+				]
+			},
+			"velocity":
+			{
+				"timeline":
+				[
+					{"time":0.02,"value":65.0},
+					{"time":0.6,"value":0.0}
+				]
+			},
+			"power":
+			{
+				"timeline":
+				[
+					{"time":0.02,"value":250.0},
+					{"time":0.6,"value":0.0}
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "audio",
+				"name": "PotatoRifle - Shoot",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"delay": 0.0
+			},
+			{	
+				"type":"audio",
+				"name":"event:/vehicle/thrusters/thruster01",
+				"offset":{"x":0.0,"y":0.0,"z":0.625},
+				"parameters":
+				[
+					"velocity",
+					"power"
+				],
+				"duration":0.5,
+				"delay":0.0
+			},
+			{
+				"type":"pointLight",
+				"name":"",
+				"offset":{"x":0.0,"y":0.0,"z":0.625},
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration":0.25,
+				"delay":0.0
+			},
+			{
+				"type": "particle",
+				"name": "p_spudgun_basic_muzzel",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.625 },
+				"attached": true,
+				"delay": 0.0
+			}
+		]
+	},
+	
+	
+	"JiGuangPaoShell":
+	{
+		"parameterList":
+		{
+			"Size": 16.0, 
+			"velocity": 0.0,
+			"power": 0.0,
+			"color": "007fff",
+			"radius": 1.5,
+			"intensity": 6.0
+		},
+		"effectList":
+		[
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.2,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "jiguangpaoshell",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"delay": 0.0
+			}
+		]
+	},
+	
+	"HangBaoDan":
+	{
+		"parameterList":
+		{
+			"size": 50,
+			"color": "91ff1e",
+			"radius": 200.0,
+			"intensity": 80.0,
+			"shakeStrength": 1,
+			"shakeRadius": 50.0
+		},
+		"parameterCurves":
+		{
+			"radius":
+			{
+				"timeline":
+				[
+					{ "time":0.0, "value":0.0 },
+					{ "time":0.1, "value":20.0 },
+					{ "time":2.5, "value":0.0 }
+				]
+			}
+		},
+		"effectList":
+		[
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 3.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -3.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 3.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": -3.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.0
+			},
+			
+			
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 5.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -5.0, "y": 0.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 5.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": -5.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 4.0, "y": 4.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 4.0, "y": -4.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -4.0, "y": 4.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -4.0, "y": -4.0, "z": 0.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			
+			
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 5.0 },
+				"attached": true,
+				"delay": 0.05
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 10.0 },
+				"attached": true,
+				"delay": 0.1
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 15.0 },
+				"attached": true,
+				"delay": 0.15
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 20.0 },
+				"attached": true,
+				"delay": 0.3
+			},
+			
+			
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 2.5, "y": 2.5, "z": 20.0 },
+				"attached": true,
+				"delay": 0.4
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -2.5, "y": 2.5, "z": 20.0 },
+				"attached": true,
+				"delay": 0.4
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 2.5, "y": -2.5, "z": 20.0 },
+				"attached": true,
+				"delay": 0.4
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -2.5, "y": -2.5, "z": 20.0 },
+				"attached": true,
+				"delay": 0.4
+			},
+			
+			
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 5.0, "y": 5.0, "z": 20.0 },
+				"attached": true,
+				"delay": 0.5
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -5.0, "y": 5.0, "z": 20.0 },
+				"attached": true,
+				"delay": 0.5
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 5.0, "y": -5.0, "z": 20.0 },
+				"attached": true,
+				"delay": 0.5
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": -5.0, "y": -5.0, "z": 20.0 },
+				"attached": true,
+				"delay": 0.5
+			},
+			{
+				"type": "particle",
+				"name": "Explosion_01",
+				"offset": { "x": 0.0, "y": 0.0, "z": 25.0 },
+				"attached": true,
+				"delay": 0.5
+			},
+			
+
+			
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"size"
+				],
+				"delay": 0.0
+			},
+			{
+				"type": "audio",
+				"name": "Gas Explosion",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"size"
+				],
+				"delay": 0.1
+			},
+			{
+				"type": "pointLight",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 0.1,
+				"delay": 0.0
+			},
+			{
+				"type": "pointLight",
+				"name": "light",
+				"offset": { "x": 0.0, "y": 0.0, "z": 5.0 },
+				"parameters":
+				[
+					"color",
+					"radius",
+					"intensity"
+				],
+				"duration": 2.5,
+				"delay": 0.0
+			},
+			{
+				"type": "cameraShake",
+				"name": "",
+				"offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+				"parameters":
+				[
+					"shakeStrength",
+					"shakeRadius"
+				],
+				"duration": 2.0,
+				"delay": 0.0
+			}
+		]
+	}
+
+}

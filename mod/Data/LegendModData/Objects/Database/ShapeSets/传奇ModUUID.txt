@@ -1,0 +1,37 @@
+Blocks		0000	01
+Polygons	1000	30
+Geometry	2000	01
+Parts		3000    06
+Vehicle		4000	07
+Weapons		5000	01
+Fittings	6000
+Nature		7000
+Legend Parts	8000
+
+当前更新代次代码：aacf
+示例：
+1001aace-5494-11e6-beb8-9e71128cae77
+
+"ratings": {
+				"density": 4,		//密度
+				"durability": 7,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 2		//浮力
+			},
+			"flammable": false,
+
+金属
+df7f01
+玻璃
+6dc6ff
+
+
+
+
+			
+			
+			
+			
+			
+			
+			

@@ -1,0 +1,383 @@
+{
+   "blockList" : [
+        {
+			"uuid": "1e679a44-458c-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_asg.png",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "9b683a",
+			"tiling": 4,
+			"density": 25.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 10		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Metal"
+		},
+        {
+			"uuid": "441893e2-458c-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_asg.png",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "df7f00",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 6,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 7		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Metal"
+		},
+        {
+			"uuid": "0010aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_asg.png",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+			"color": "8d8f89",
+			"tiling": 4,
+			"density": 1250.0,
+			"ratings": {
+				"durability": 8,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 3		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Metal"
+		},
+    	{
+			"uuid": "2c0a2694-458c-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_asg.png",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+			"color": "675f51",
+			"tiling": 4,
+			"density": 12500.0,
+			"ratings": {
+				"durability": 10,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Metal"
+		},
+		{
+			"uuid": "0002aace-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_asg.png",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+			"color": "222222",
+			"tiling": 4,
+			"density": 125000.0,
+			"ratings": {
+				"durability": 10,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Metal"
+		},
+        {		
+			"uuid": "4c7e24d4-458c-11e6-beb8-9e71128cae77",
+            "dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_asg.png",
+            "nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "c2f9ff",
+			"tiling": 4,
+			"glass": true,
+			"density": 25.0,
+			"ratings": {
+				"durability": 4,	//耐久度
+				"friction": 3,		//摩擦力
+				"buoyancy": 3		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+            "physicsMaterial": "Glass"
+			
+		},
+		{
+			"uuid": "0001aacb-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/JM_asg.png",
+            "nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "c2f9ff",
+			"tiling": 4,
+			"glass": true,
+			"density": 25.0,
+			"ratings": {
+				"durability": 4,	//耐久度
+				"friction": 3,		//摩擦力
+				"buoyancy": 3		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+            "physicsMaterial": "Glass"
+		},
+		{
+			"uuid": "0011aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Legend/FG_asg.png",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "FFFFFF",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 7		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Plastic"
+		},
+        {
+			"uuid": "0001aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_YaKeLi_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/CS_An_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "222222",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 6,		//摩擦力
+				"buoyancy": 9		//浮力
+			},
+			"flammable": true,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Plastic"
+		},
+        {
+			"uuid": "0012aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_CiZhuan2_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_CiZhuan2_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_CiZhuan2_nor.png",
+            "color": "F0F0EB",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 3,		//摩擦力
+				"buoyancy": 2		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Glass"
+		},
+        {
+			"uuid": "0002aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_HongZhuan_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_HongZhuan_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_HongZhuan_nor.png",
+            "color": "AA4B32",
+			"tiling": 8,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 8,	//耐久度
+				"friction": 8,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Rock"
+		},
+		{
+			"uuid": "0001aacf-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_ShiZhuan1_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_ShiZhuan1_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_ShiZhuan1_nor.png",
+            "color": "afa58f",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 8,	//耐久度
+				"friction": 5,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Rock"
+		},
+        {
+			"uuid": "0003aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_YanShi_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_YanShi_asg.tif",
+		    "nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_YanShi_nor.png",
+            "color": "23272C",
+			"tiling": 8,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 9,	//耐久度
+				"friction": 9,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Rock"
+		},
+        {
+			"uuid": "0004aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_GangKuai_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_GangKuai_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_GangKuai_nor.png",
+            "color": "201f24",
+			"tiling": 8,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 8,	//耐久度
+				"friction": 7,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Metal"
+		},
+        {
+			"uuid": "0005aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou3_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou3_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou3_nor.png",
+            "color": "d2b867",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 7,		//摩擦力
+				"buoyancy": 9		//浮力
+			},
+			"flammable": true,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Wood"
+		},
+        {
+			"uuid": "0006aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou2_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou2_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "ebc78e",
+			"tiling": 4,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 7,		//摩擦力
+				"buoyancy": 9		//浮力
+			},
+			"flammable": true,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Wood"
+		},
+        {
+			"uuid": "0007aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou1_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou1_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou1_nor.png",
+            "color": "66401a",
+			"tiling": 8,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 7,		//摩擦力
+				"buoyancy": 9		//浮力
+			},
+			"flammable": true,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Wood"
+		},
+		{
+			"uuid": "0001aace-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou4_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_MuTou4_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "eeaf5c",
+			"tiling": 16,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 7,		//摩擦力
+				"buoyancy": 9		//浮力
+			},
+			"flammable": true,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Wood"
+		},
+        {
+			"uuid": "0008aaab-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_DaLiShi_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_DaLiShi_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Legend/CS_nor.png",
+            "color": "958379",
+			"tiling": 8,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 6,	//耐久度
+				"friction": 2,		//摩擦力
+				"buoyancy": 1		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Glass"
+		},
+		{
+			"uuid": "0001aaaf-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_Grass_dif.png",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/CS_An_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_Grass_nor.png",
+            "color": "F4EFD6",
+			"tiling": 16,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 6,		//摩擦力
+				"buoyancy": 2		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Grass"
+		},
+		{		
+			"uuid": "0002aacb-5494-11e6-beb8-9e71128cae77",
+            "dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_Ice_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_Ice_asg.tif",
+            "nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_Ice_nor.png",
+            "color": "ddddee",
+			"tiling": 16,
+			"glass": true,
+			"density": 250.0,
+			"ratings": {
+				"durability": 5,	//耐久度
+				"friction": 1,		//摩擦力
+				"buoyancy": 6		//浮力
+			},
+			"flammable": false,
+			/*"qualityLevel": 1,*/
+            "physicsMaterial": "Glass"
+			
+		},
+		{
+			"uuid": "0003aacb-5494-11e6-beb8-9e71128cae77",
+			"dif": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_DiTan_dif.tif",
+			"asg": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_DiTan_asg.tif",
+			"nor": "$GAME_DATA/LegendModData/Objects/Textures/Blocks/Block_DiTan_nor.png",
+            "color": "c60000",
+			"tiling": 16,
+      	    "density": 250.0,
+			"ratings": {
+				"durability": 3,	//耐久度
+				"friction": 8,		//摩擦力
+				"buoyancy": 7		//浮力
+			},
+			"flammable": true,
+			/*"qualityLevel": 1,*/
+			"physicsMaterial": "Grass"
+		}
+   ]
+}
