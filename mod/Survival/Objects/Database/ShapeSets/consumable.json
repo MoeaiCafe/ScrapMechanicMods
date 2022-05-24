@@ -81,11 +81,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"consumable": true,
-			"stackSize": 200,
-			"restrictions": {
-				"erasable": true
-			},
+			"stackSize": 10,
 			"edible": {
 				"hpGain": 10,
 				"foodGain": 25,
@@ -114,10 +110,8 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 200,
-			"restrictions": {
-				"erasable": true
-			},
+			"density": 250.0,
+			"stackSize": 5,
 			"edible": {
 				"hpGain": 100,
 				"foodGain": 100,
@@ -146,11 +140,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"consumable": true,
-			"stackSize": 200,
-			"restrictions": {
-				"erasable": true
-			},
+			"stackSize": 5,
 			"edible": {
 				"hpGain": 100,
 				"foodGain": 100,
@@ -202,10 +192,8 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 200,
-			"restrictions": {
-				"erasable": true
-			},
+			"density": 250.0,
+			"stackSize": 5,
 			"autoTool": "87cf94fa-a52a-47bd-8d62-47a2e10fe2af"
 		},
 		{
@@ -253,10 +241,8 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 200,
-			"restrictions": {
-				"erasable": true
-			},
+			"density": 250.0,
+			"stackSize": 10,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 10,
@@ -297,15 +283,13 @@
 			"physicsMaterial": "Sand",
 			"ratings": {
 				"density": 2,
-				"durability": 2,
+				"durability": 1,
 				"friction": 4,
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 200,
-			"restrictions": {
-				"erasable": true
-			},
+			"density": 250.0,
+			"stackSize": 20,
 			"autoTool": "3ef5412a-7044-45ae-9592-9ce86bd99081"
 		}
 	]

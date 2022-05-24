@@ -15,8 +15,10 @@
 				"friction": 4,
 				"buoyancy": 4
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 250.0,
+			"qualityLevel": 2
 		},
 		{
 			"uuid": "1897ee42-0291-43e4-9645-8c5a5d310398",
@@ -33,8 +35,10 @@
 				"friction": 5,
 				"buoyancy": 8
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 250.0,
+			"qualityLevel": 3
 		},
 		{
 			"uuid": "061b5d4b-0a6a-4212-b0ae-9e9681f1cbfb",
@@ -51,8 +55,10 @@
 				"friction": 5,
 				"buoyancy": 9
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 250.0,
+			"qualityLevel": 3
 		},
 		{
 			"uuid": "1f7ac0bb-ad45-4246-9817-59bdf7f7ab39",
@@ -69,8 +75,10 @@
 				"friction": 4,
 				"buoyancy": 2
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 1250.0,
+			"qualityLevel": 2
 		},
 		{
 			"uuid": "1016cafc-9f6b-40c9-8713-9019d399783f",
@@ -87,8 +95,10 @@
 				"friction": 4,
 				"buoyancy": 5
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0,
+			"qualityLevel": 5
 		},
 		{
 			"uuid": "c0dfdea5-a39d-433a-b94a-299345a5df46",
@@ -105,8 +115,10 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0,
+			"qualityLevel": 5
 		},
 		{
 			"uuid": "30a2288b-e88e-4a92-a916-1edbfc2b2dac",
@@ -123,8 +135,10 @@
 				"friction": 6,
 				"buoyancy": 5
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 500.0,
+			"qualityLevel": 2
 		},
 		{
 			"uuid": "ff234e42-5da4-43cc-8893-940547c97882",
@@ -141,8 +155,10 @@
 				"friction": 6,
 				"buoyancy": 5
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 500,
+			"density": 500.0,
+			"qualityLevel": 4
 		},
 		{
 			"uuid": "e281599c-2343-4c86-886e-b2c1444e8810",
@@ -159,8 +175,10 @@
 				"friction": 6,
 				"buoyancy": 5
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 500.0,
+			"qualityLevel": 4
 		},
 		{
 			"uuid": "f5ceb7e3-5576-41d2-82d2-29860cf6e20e",
@@ -177,8 +195,8 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
-			"stackSize": 512,
 			"flammable": false,
+			"stackSize": 512,
 			"restrictions": {
 				"destructable": true,
 				"erasable": false,
@@ -201,8 +219,9 @@
 				"friction": 7,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "220b201e-aa40-4995-96c8-e6007af160de",
@@ -219,8 +238,9 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "25a5ffe7-11b1-4d3e-8d7a-48129cbaf05e",
@@ -237,8 +257,9 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "f406bf6e-9fd5-4aa0-97c1-0b3c2118198e",
@@ -256,8 +277,9 @@
 				"friction": 4,
 				"buoyancy": 8
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 1250.0
 		},
 		{
 			"uuid": "628b2d61-5ceb-43e9-8334-a4135566df7a",
@@ -274,8 +296,8 @@
 				"friction": 4,
 				"buoyancy": 7
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 512
 		},
 		{
 			"uuid": "9be6047c-3d44-44db-b4b9-9bcf8a9aab20",
@@ -292,8 +314,9 @@
 				"friction": 5,
 				"buoyancy": 6
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 250.0
 		},
 		{
 			"uuid": "b145d9ae-4966-4af6-9497-8fca33f9aee3",
@@ -310,8 +333,9 @@
 				"friction": 5,
 				"buoyancy": 3
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 250.0
 		},
 		{
 			"uuid": "febce8a6-6c05-4e5d-803b-dfa930286944",
@@ -328,8 +352,9 @@
 				"friction": 4,
 				"buoyancy": 4
 			},
+			"flammable": true,
 			"stackSize": 512,
-			"flammable": true
+			"density": 250.0
 		},
 		{
 			"uuid": "e981c337-1c8a-449c-8602-1dd990cbba3a",
@@ -346,8 +371,9 @@
 				"friction": 6,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 250.0
 		},
 		{
 			"uuid": "4aa2a6f0-65a4-42e3-bf96-7dec62570e0b",
@@ -365,8 +391,9 @@
 				"friction": 3,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "3d0b7a6e-5b40-474c-bbaf-efaa54890e6a",
@@ -384,8 +411,9 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "ea6864db-bb4f-4a89-b9ec-977849b6713a",
@@ -403,8 +431,9 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "a479066d-4b03-46b5-8437-e99fec3f43ee",
@@ -422,8 +451,9 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "b4fa180c-2111-4339-b6fd-aed900b57093",
@@ -441,8 +471,9 @@
 				"friction": 2,
 				"buoyancy": 2
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 1250.0
 		},
 		{
 			"uuid": "920b40c8-6dfc-42e7-84e1-d7e7e73128f6",
@@ -459,8 +490,8 @@
 				"friction": 4,
 				"buoyancy": 3
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 512
 		},
 		{
 			"uuid": "f7d4bfed-1093-49b9-be32-394c872a1ef4",
@@ -477,8 +508,8 @@
 				"friction": 6,
 				"buoyancy": 2
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 512
 		},
 		{
 			"uuid": "3e3242e4-1791-4f70-8d1d-0ae9ba3ee94c",
@@ -495,8 +526,8 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 512
 		},
 		{
 			"uuid": "d740a27d-cc0f-4866-9e07-6a5c516ad719",
@@ -513,8 +544,8 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 512
 		},
 		{
 			"uuid": "4ad97d49-c8a5-47f3-ace3-d56ba3affe50",
@@ -531,8 +562,8 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
-			"stackSize": 512,
-			"flammable": false
+			"flammable": false,
+			"stackSize": 512
 		},
 		{
 			"uuid": "c56700d9-bbe5-4b17-95ed-cef05bd8be1b",
@@ -549,8 +580,10 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 250.0,
+			"qualityLevel": 1
 		},
 		{
 			"uuid": "b5ee5539-75a2-4fef-873b-ef7c9398b3f5",
@@ -568,8 +601,10 @@
 				"friction": 3,
 				"buoyancy": 5
 			},
+			"flammable": false,
 			"stackSize": 512,
-			"flammable": false
+			"density": 250.0,
+			"qualityLevel": 1
 		}
 	]
 }
