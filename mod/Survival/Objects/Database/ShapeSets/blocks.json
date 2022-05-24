@@ -15,6 +15,7 @@
 				"friction": 4,
 				"buoyancy": 4
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -32,6 +33,7 @@
 				"friction": 5,
 				"buoyancy": 8
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -49,6 +51,7 @@
 				"friction": 5,
 				"buoyancy": 9
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -66,6 +69,7 @@
 				"friction": 4,
 				"buoyancy": 2
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -83,6 +87,7 @@
 				"friction": 4,
 				"buoyancy": 5
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -100,6 +105,7 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -117,6 +123,7 @@
 				"friction": 6,
 				"buoyancy": 5
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -134,6 +141,7 @@
 				"friction": 6,
 				"buoyancy": 5
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -151,6 +159,7 @@
 				"friction": 6,
 				"buoyancy": 5
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -168,6 +177,7 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
+			"stackSize": 512,
 			"flammable": false,
 			"restrictions": {
 				"destructable": true,
@@ -191,6 +201,7 @@
 				"friction": 7,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -208,6 +219,7 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -225,6 +237,7 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -243,6 +256,7 @@
 				"friction": 4,
 				"buoyancy": 8
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -260,6 +274,7 @@
 				"friction": 4,
 				"buoyancy": 7
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -277,6 +292,7 @@
 				"friction": 5,
 				"buoyancy": 6
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -294,6 +310,7 @@
 				"friction": 5,
 				"buoyancy": 3
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -311,6 +328,7 @@
 				"friction": 4,
 				"buoyancy": 4
 			},
+			"stackSize": 512,
 			"flammable": true
 		},
 		{
@@ -328,6 +346,7 @@
 				"friction": 6,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -346,6 +365,7 @@
 				"friction": 3,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -364,6 +384,7 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -382,6 +403,7 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -400,6 +422,7 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -418,6 +441,7 @@
 				"friction": 2,
 				"buoyancy": 2
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -435,6 +459,7 @@
 				"friction": 4,
 				"buoyancy": 3
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -452,6 +477,7 @@
 				"friction": 6,
 				"buoyancy": 2
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -469,6 +495,7 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -486,6 +513,7 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -503,6 +531,7 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -520,6 +549,7 @@
 				"friction": 4,
 				"buoyancy": 1
 			},
+			"stackSize": 512,
 			"flammable": false
 		},
 		{
@@ -538,6 +568,7 @@
 				"friction": 3,
 				"buoyancy": 5
 			},
+			"stackSize": 512,
 			"flammable": false
 		}
 	]
