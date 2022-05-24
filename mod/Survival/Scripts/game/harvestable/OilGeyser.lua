@@ -37,7 +37,7 @@ function OilGeyser.sv_n_harvest( self, params, player )
 			local container = player:getInventory()
 			local quantity = randomStackAmount( 1, 2, 4 )
 			if sm.container.beginTransaction() then
-				sm.container.collect( container, obj_resource_crudeoil, 50 )
+				sm.container.collect( container, obj_resource_crudeoil, 100 )
 				if sm.container.endTransaction() then
 					sm.event.sendToPlayer( player, "sv_e_onLoot", { uuid = obj_resource_crudeoil, quantity = quantity, pos = self.harvestable.worldPosition } )
 					sm.effect.playEffect( "Oilgeyser - Picked", self.harvestable.worldPosition )

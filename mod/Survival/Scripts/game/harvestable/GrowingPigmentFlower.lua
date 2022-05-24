@@ -2,7 +2,7 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_loot.lua")
 
 GrowingPigmentFlower = class()
 
-local GrowTickTime = DAYCYCLE_TIME_TICKS * 2.5
+local GrowTickTime = DAYCYCLE_TIME_TICKS * 0.1
 
 -- Server
 function GrowingPigmentFlower.server_onCreate( self )

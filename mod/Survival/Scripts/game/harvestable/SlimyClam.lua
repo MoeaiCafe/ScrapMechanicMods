@@ -17,7 +17,7 @@ function SlimyClam.sv_onHit( self )
 			local lootList = {}
 			local count = randomStackAmountAvg2()
 			for i = 1, count do
-				lootList[i] = { uuid = obj_resources_slimyclam }
+				lootList[i] = { uuid = obj_resources_slimyclam, quantity = 100 }
 			end
 			SpawnLoot( self.harvestable, lootList, self.harvestable.worldPosition + sm.vec3.new( 0, 0, 0.25 ), math.pi / 36 )
 		end

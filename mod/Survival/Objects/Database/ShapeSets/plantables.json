@@ -523,7 +523,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 40,
@@ -566,7 +566,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 30,
@@ -611,7 +611,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 15,
@@ -664,7 +664,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 20,
@@ -708,7 +708,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 30,
@@ -760,7 +760,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 20,
@@ -813,7 +813,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 10,
@@ -857,7 +857,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 25,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 50,

@@ -26,7 +26,7 @@ function CornPlant.sv_onHit( self )
 		local lootList = {}
 		local slots = math.random( 3, 4 )
 		for i = 1, slots do
-			lootList[i] = { uuid = obj_resource_corn, quantity = 1 }
+			lootList[i] = { uuid = obj_resource_corn, quantity = 10 }
 		end
 		SpawnLoot( self.harvestable, lootList, self.harvestable.worldPosition + sm.vec3.new( 0, 0, 1.0 ) )
 		

@@ -45,7 +45,7 @@ function BurntTree.sv_onHit( self, damage )
 			local lootList = {}
 			local slots = math.random( 2, 4 )
 			for i = 1, slots do
-				lootList[i] = { uuid = obj_resource_ember, quantity = 1 }
+				lootList[i] = { uuid = obj_resource_ember, quantity = 100 }
 			end
 			SpawnLoot( self.harvestable, lootList, self.harvestable.worldPosition + sm.vec3.new( 0, 0, 0.75 ) )
 
