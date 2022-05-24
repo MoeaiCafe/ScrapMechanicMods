@@ -30,6 +30,7 @@ function BeeHive.sv_onHit( self )
 		self.destroyed = true
 	end
 end
+
 function BeeHive.client_onCreate( self )
 	self.cl = {}
 	self.cl.swarmEffect = sm.effect.createEffect( "beehive - beeswarm" )

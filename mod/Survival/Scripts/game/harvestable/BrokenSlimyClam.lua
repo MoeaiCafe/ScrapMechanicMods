@@ -2,7 +2,7 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_loot.lua")
 
 BrokenSlimyClam = class()
 
-local GrowTickTime = DAYCYCLE_TIME_TICKS * 0.00345
+local GrowTickTime = DAYCYCLE_TIME_TICKS * 2.5
 
 -- Server
 function BrokenSlimyClam.server_onCreate( self )

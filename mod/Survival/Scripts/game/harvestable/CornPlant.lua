@@ -24,7 +24,7 @@ function CornPlant.sv_onHit( self )
 	if not self.destroyed and sm.exists( self.harvestable ) then
 
 		local lootList = {}
-		local slots = math.random( 9, 10 )
+		local slots = math.random( 3, 4 )
 		for i = 1, slots do
 			lootList[i] = { uuid = obj_resource_corn, quantity = 1 }
 		end

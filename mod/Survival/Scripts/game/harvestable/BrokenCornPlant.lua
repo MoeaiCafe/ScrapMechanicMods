@@ -2,7 +2,7 @@ dofile "$SURVIVAL_DATA/Scripts/game/survival_loot.lua"
 
 BrokenCornPlant = class()
 
-local GrowTickTime = DAYCYCLE_TIME_TICKS * 0.5
+local GrowTickTime = DAYCYCLE_TIME_TICKS * 0.1
 
 -- Server
 function BrokenCornPlant.server_onCreate( self )
