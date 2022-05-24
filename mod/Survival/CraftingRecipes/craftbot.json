@@ -895,6 +895,21 @@
 		]
 	},
 	{
+		"itemId": "d0afb527-e786-4a22-a907-6da7e7cba8cb",
+		"quantity": 1,
+		"craftTime": 20,
+		"ingredientList": [
+			{
+				"quantity": 15,
+				"itemId": "8aedf6c2-94e1-4506-89d4-a0227c552f1e"
+			},
+			{
+				"quantity": 3,
+				"itemId": "36335664-6e61-4d44-9876-54f9660a8565"
+			}
+		]
+	},
+	{
 		"itemId": "fcfae5e2-1df9-47d8-bb9a-30bec9b5b1f5",
 		"quantity": 1,
 		"craftTime": 57,
@@ -1225,6 +1240,52 @@
 		]
 	},
 	{
+		"itemId": "5530e6a0-4748-4926-b134-50ca9ecb9dcf",
+		"quantity": 10,
+		"craftTime": 10,
+		"ingredientList": [
+			{
+				"quantity": 10,
+				"itemId": "5f41af56-df4c-4837-9b3c-10781335757f"
+			},
+			{
+				"quantity": 15,
+				"itemId": "8aedf6c2-94e1-4506-89d4-a0227c552f1e"
+			},
+			{
+				"quantity": 5,
+				"itemId": "36335664-6e61-4d44-9876-54f9660a8565"
+			},
+			{
+				"quantity": 5,
+				"itemId": "c7322cd1-3158-41d9-b15a-eff2f2f8d9f7"
+			}
+		]
+	},
+	{
+		"itemId": "f152e4df-bc40-44fb-8d20-3b3ff70cdfe3",
+		"quantity": 10,
+		"craftTime": 10,
+		"ingredientList": [
+			{
+				"quantity": 5,
+				"itemId": "910a7f2c-52b0-46eb-8873-ad13255539af"
+			},
+			{
+				"quantity": 10,
+				"itemId": "8aedf6c2-94e1-4506-89d4-a0227c552f1e"
+			},
+			{
+				"quantity": 5,
+				"itemId": "36335664-6e61-4d44-9876-54f9660a8565"
+			},
+			{
+				"quantity": 5,
+				"itemId": "c7322cd1-3158-41d9-b15a-eff2f2f8d9f7"
+			}
+		]
+	},
+	{
 		"itemId": "869d4736-289a-4952-96cd-8a40117a2d28",
 		"extras": [
 			{
@@ -1238,6 +1299,29 @@
 			{
 				"quantity": 1,
 				"itemId": "103fc4e6-7e57-465e-a86d-983343415877"
+			}
+		]
+	},
+	{
+		"itemId": "cb7305b2-d8b5-4302-aff3-6cdd9212ca64",
+		"quantity": 5,
+		"craftTime": 10,
+		"ingredientList": [
+			{
+				"quantity": 5,
+				"itemId": "2c4a2633-153a-4800-ba3d-2ac0d993b9c8"
+			},
+			{
+				"quantity": 5,
+				"itemId": "f5098301-1693-457b-8efc-83b3504105ac"
+			},
+			{
+				"quantity": 5,
+				"itemId": "aa4c9c5e-7fc6-4c27-967f-c550e551c872"
+			},
+			{
+				"quantity": 5,
+				"itemId": "6a43fff2-8c6d-4460-9f44-e5483b5267dd"
 			}
 		]
 	},
