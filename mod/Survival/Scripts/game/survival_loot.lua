@@ -3,7 +3,7 @@ dofile( "$SURVIVAL_DATA/Scripts/game/survival_shapes.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/util.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_constants.lua" )
 
--- 几率为100的物品比几率为1的物品可能性高100倍
+-- A chance of 100 makes the item 100 times more likely than with a chance of 1
 
 local random_loot = {
 	{ uuid = obj_plantables_carrot, 		chance = 15,	quantity = 1 },
@@ -21,7 +21,7 @@ local random_loot = {
 	{ uuid = obj_consumable_water,			chance = 10,	quantity = randomStackAmount5 },
 	{ uuid = obj_consumable_chemical,		chance = 70,	quantity = randomStackAmount5 },
 	{ uuid = obj_consumable_fertilizer,		chance = 25,	quantity = randomStackAmount5 },
-	{ uuid = obj_consumable_component,		chance = 100,	quantity = 30 },
+	{ uuid = obj_consumable_component,		chance = 70,	quantity = 1 },
 	{ uuid = obj_consumable_inkammo,		chance = 25,	quantity = randomStackAmount10 },
 	{ uuid = obj_consumable_glowstick,		chance = 20,	quantity = 1 },
 	{ uuid = obj_consumable_soilbag,		chance = 40,	quantity = 1 },
@@ -55,7 +55,7 @@ local random_epicloot = {
 	{ uuid = obj_consumable_water,			chance = 10,	quantity = randomStackAmount10 },
 	{ uuid = obj_consumable_chemical,		chance = 70,	quantity = randomStackAmount10 },
 	{ uuid = obj_consumable_fertilizer,		chance = 25,	quantity = randomStackAmount10 },
-	{ uuid = obj_consumable_component,		chance = 100,	quantity = 30 },
+	{ uuid = obj_consumable_component,		chance = 70,	quantity = 1 },
 	{ uuid = obj_consumable_inkammo,		chance = 25,	quantity = randomStackAmount20 },
 	{ uuid = obj_consumable_glowstick,		chance = 20,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_consumable_soilbag,		chance = 40,	quantity = randomStackAmountAvg2 },
@@ -92,7 +92,7 @@ local random_warehouseloot = {
 	{ uuid = obj_consumable_battery,		chance = 40,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_fertilizer,		chance = 25,	quantity = randomStackAmountAvg10 },
 	{ uuid = obj_consumable_soilbag,		chance = 40,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_consumable_component,		chance = 100,	quantity = 30 },
+	{ uuid = obj_consumable_component,		chance = 70,	quantity = 1 },
 }
 
 local random_loot_startarea = {
@@ -118,7 +118,7 @@ local loot_crate_epic = {
 		{ uuid = obj_outfitpackage_epic, 			chance = 10 },
 
 		{ uuid = obj_consumable_soilbag, 			chance = 50,	quantity = randomStackAmountAvg3 },
-		{ uuid = obj_consumable_component, 			chance = 100,	quantity = 30 },
+		{ uuid = obj_consumable_component, 			chance = 50,	quantity = randomStackAmountAvg3 },
 
 		{ uuid = jnt_suspensionoffroad_01, 			chance = 20 },
 		{ uuid = jnt_suspensionsport_01, 			chance = 20 },
@@ -225,15 +225,14 @@ local loot_glow_goop = {
 local loot_totebot_green = {
 	slots = function() return 1 end,
 	randomLoot = {
-		{ uuid = obj_resource_circuitboard,		chance = 1 },
+		{ uuid = obj_resource_circuitboard,		chance = 1,		quantity = randomStackAmountAvg3},
 	}
 }
 
 local loot_haybot = {
-	slots = function() return randomStackAmount( 0, 0.5, 1 ) end,
+	slots = function() return 1 end,
 	randomLoot = {
-		{ uuid = obj_consumable_component,		chance = 1 },
-		{ uuid = obj_resource_circuitboard,		chance = 2 },
+		{ uuid = obj_consumable_component,		chance = 1,		quantity = randomStackAmountAvg3},
 	}
 }
 
