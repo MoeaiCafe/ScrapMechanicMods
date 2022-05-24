@@ -35,7 +35,6 @@
 				"z": 1
 			},
 			"rotationSet": "PropYZ",
-			"sticky": "+X-X-Y-Z",
 			"physicsMaterial": "Plastic",
 			"ratings": {
 				"density": 3,
@@ -43,7 +42,8 @@
 				"friction": 3,
 				"buoyancy": 7
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5
 		},
 		{
 			"uuid": "27a221b1-9809-4df1-901a-caafe119c9b6",
@@ -80,7 +80,6 @@
 				"z": 1
 			},
 			"rotationSet": "PropYZ",
-			"sticky": "+X-X-Y-Z",
 			"physicsMaterial": "Plastic",
 			"ratings": {
 				"density": 3,
@@ -88,7 +87,8 @@
 				"friction": 3,
 				"buoyancy": 7
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5
 		},
 		{
 			"uuid": "7ab0cac7-b055-4283-b0bc-f85dd4d0416b",
@@ -125,7 +125,6 @@
 				"z": 1
 			},
 			"rotationSet": "PropYZ",
-			"sticky": "+X-X-Y-Z",
 			"physicsMaterial": "Plastic",
 			"ratings": {
 				"density": 3,
@@ -133,7 +132,8 @@
 				"friction": 3,
 				"buoyancy": 7
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5
 		}
 	]
 }
