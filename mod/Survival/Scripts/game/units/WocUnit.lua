@@ -13,6 +13,8 @@ local EdibleSearchRadius = 6.0
 local EdibleReach = 1.75
 local CornPerMilk = 3
 
+if SurvivalGame then dofile "$SURVIVAL_DATA/Scripts/game/SurvivalPlayer.lua" end --Added by WEN
+
 function WocUnit.server_onCreate( self )
 
 	self.saved = self.storage:load()
@@ -102,6 +104,8 @@ function WocUnit.server_onFixedUpdate( self, dt )
 			return
 		end
 	end
+
+	if SurvivalGame then SurvivalPlayer.sv_unitUpdates( self, { "Woc", self.saved.stats.hp, self.saved.stats.maxhp, self.unit.id } ) end --Added by WEN
 
 	if self.unit.character:isSwimming() then
 		self.roamState.cliffAvoidance = false
@@ -309,6 +313,7 @@ function WocUnit.sv_onDeath( self )
 		self.unit:destroy()
 		print("'WocUnit' killed!")
 		if SurvivalGame then
+			SurvivalPlayer.sv_unitUpdates( self, { "Woc", 0, self.saved.stats.maxhp, self.unit.id } ) --Added by WEN
 			local loot = SelectLoot( "loot_woc" )
 			SpawnLoot( self.unit, loot )
 		end

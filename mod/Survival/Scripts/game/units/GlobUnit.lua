@@ -5,13 +5,15 @@ dofile "$SURVIVAL_DATA/Scripts/game/units/states/PathingState.lua"
 
 GlobUnit = class( nil )
 
+if SurvivalGame then dofile "$SURVIVAL_DATA/Scripts/game/SurvivalPlayer.lua" end--Added by WEN
+
 local RoamStartTimeMin = 40 * 10 -- 10 seconds
 local RoamStartTimeMax = 40 * 25 -- 25 seconds
 local FleeTimeMin = 40 * 14 -- 14 seconds
 local FleeTimeMax = 40 * 20 -- 20 seconds
 local EdibleSearchRadius = 5.0
 local EdibleReach = 0.75
-local CardboardPerGoop = 1
+local CardboardPerGoop = 15
 
 function GlobUnit.server_onCreate( self )
 
@@ -20,7 +22,7 @@ function GlobUnit.server_onCreate( self )
 		self.saved = {}
 	end
 	if self.saved.stats == nil then
-		self.saved.stats = { hp = 25, maxhp = 25, cardboardEaten = 0 }
+		self.saved.stats = { hp = 100, maxhp = 100, cardboardEaten = 0 }
 	end
 
 	if self.params then
@@ -92,6 +94,8 @@ end
 
 function GlobUnit.server_onFixedUpdate( self, dt )
 
+	if SurvivalGame then SurvivalPlayer.sv_unitUpdates( self, { "Glowb", self.saved.stats.hp, self.saved.stats.maxhp, self.unit.id } ) end --Added by WEN
+
 	if sm.exists( self.unit ) and not self.destroyed then
 		if self.saved.deathTickTimestamp and sm.game.getCurrentTick() >= self.saved.deathTickTimestamp then
 			self.unit:destroy()
@@ -128,8 +132,10 @@ function GlobUnit.server_onFixedUpdate( self, dt )
 
 	if self.saved.stats.cardboardEaten >= CardboardPerGoop then
 		self.saved.stats.cardboardEaten = self.saved.stats.cardboardEaten - CardboardPerGoop
-		local loot = SelectLoot( "loot_glow_goop" )
-		SpawnLoot( self.unit, loot )
+		if SurvivalGame then
+			local loot = SelectLoot( "loot_glow_goop" )
+			SpawnLoot( self.unit, loot )
+		end
 		self.storage:save( self.saved )
 	end
 end
@@ -215,6 +221,9 @@ function GlobUnit.server_onUnitUpdate( self, dt )
 end
 
 function GlobUnit.server_onProjectile( self, hitPos, hitTime, hitVelocity, projectileName, attacker, damage )
+	if not sm.exists( self.unit ) or not sm.exists( attacker ) then
+		return
+	end
 	if damage > 0 then
 		if self.fleeFrom == nil then
 			self.fleeFrom = attacker
@@ -226,6 +235,9 @@ function GlobUnit.server_onProjectile( self, hitPos, hitTime, hitVelocity, proje
 end
 
 function GlobUnit.server_onMelee( self, hitPos, attacker, damage, power )
+	if not sm.exists( self.unit ) or not sm.exists( attacker ) then
+		return
+	end
 	local attackingCharacter = attacker:getCharacter()
 	if self.fleeFrom == nil then
 		self.fleeFrom = attacker
@@ -238,6 +250,9 @@ function GlobUnit.server_onMelee( self, hitPos, attacker, damage, power )
 end
 
 function GlobUnit.server_onExplosion( self, center, destructionLevel )
+	if not sm.exists( self.unit ) then
+		return
+	end
 	if self.fleeFrom == nil then
 		self.fleeFrom = center
 		self.unit:sendCharacterEvent( "hit" )
@@ -246,17 +261,20 @@ function GlobUnit.server_onExplosion( self, center, destructionLevel )
 end
 
 function GlobUnit.server_onCollision( self, other, collisionPosition, selfPointVelocity, otherPointVelocity, collisionNormal )
+	if not sm.exists( self.unit ) then
+		return
+	end
+
 	if self.impactCooldownTicks > 0 then
 		return
 	end
 
-	local damageFraction, tumbleTicks = CharacterCollision( self, other, collisionPosition, selfPointVelocity, otherPointVelocity, collisionNormal )
-	local damage = damageFraction * self.saved.stats.maxhp
+	local damage, _, _, _ = CharacterCollision( self.unit.character, other, collisionPosition, selfPointVelocity, otherPointVelocity, collisionNormal, self.saved.stats.maxhp )
 	if damage > 0 then
-		self.impactCooldownTicks = 0.25 * 40
+		self.impactCooldownTicks = 6
 	end
 	if damage > 0 then
-		print("'GlobUnit' took collision damage")
+		print("'GlobUnit' took", damage, "collision damage")
 		self:sv_takeDamage( damage )
 	end
 end
@@ -296,6 +314,7 @@ end
 function GlobUnit.sv_onDeath( self )
 	local character = self.unit:getCharacter()
 	if not self.destroyed then
+		if SurvivalGame then SurvivalPlayer.sv_unitUpdates( self, { "Glowb", 0, self.saved.stats.maxhp, self.unit.id } ) end --Added by WEN
 		self.saved.stats.hp = 0
 		self.unit:destroy()
 		print("'GlobUnit' killed!")

@@ -14,6 +14,8 @@ local RandomRaidFireTickIntervalMin = 0 * 40
 local RandomRaidFireTickIntervalMax = 2 * 40
 local HearRange = 40.0
 
+if SurvivalGame then dofile "$SURVIVAL_DATA/Scripts/game/SurvivalPlayer.lua" end --Added by WEN
+
 function TapebotUnit.server_onCreate( self )
 	
 	self.target = nil
@@ -188,6 +190,12 @@ function TapebotUnit.server_onFixedUpdate( self, dt )
 
 	if not sm.exists( self.unit ) then
 		return
+	end
+
+	if SurvivalGame then
+		local unitName = "Tapebot" --Added by WEN
+		if self.explosiveProjectile then unitName = "Red Tapebot" end --Added by WEN
+		SurvivalPlayer.sv_unitUpdates( self, { unitName, self.saved.stats.hp, self.saved.stats.maxhp, self.unit.id } ) --Added by WEN
 	end
 	
 	if updateCrushing( self ) then
@@ -758,6 +766,10 @@ function TapebotUnit.sv_onDeath( self, impact, headDestroyed )
 		sm.effect.playEffect( "TapeBot - Destroyed", character.worldPosition, nil, nil, nil, { Color = self.unit.character:getColor() } )
 		self:sv_spawnParts( impact, headDestroyed )
 		if SurvivalGame then
+			local unitName = "Tapebot" --Added by WEN
+			if self.explosiveProjectile then unitName = "Red Tapebot" end --Added by WEN
+			SurvivalPlayer.sv_unitUpdates( self, { unitName, 0, self.saved.stats.maxhp, self.unit.id } ) --Added by WEN
+			
 			local loot = SelectLoot( "loot_tapebot" )
 			SpawnLoot( self.unit, loot )
 		end

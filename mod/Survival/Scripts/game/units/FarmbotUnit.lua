@@ -31,6 +31,8 @@ local AllyRange = 20.0
 local MeleeBreachLevel = 9
 local HearRange = 40.0
 
+if SurvivalGame then dofile "$SURVIVAL_DATA/Scripts/game/SurvivalPlayer.lua" end --Added by WEN
+
 function FarmbotUnit.server_onCreate( self )
 	
 	self.target = nil
@@ -320,6 +322,8 @@ function FarmbotUnit.server_onFixedUpdate( self, dt )
 		return
 	end
 	
+	if SurvivalGame then SurvivalPlayer.sv_unitUpdates( self, { "Farmbot", self.saved.stats.hp, self.saved.stats.maxhp, self.unit.id } ) end --Added by WEN
+
 	self.stateTicker:tick()
 	
 	if updateCrushing( self ) then

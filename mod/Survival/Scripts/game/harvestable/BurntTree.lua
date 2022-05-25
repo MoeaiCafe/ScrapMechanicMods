@@ -5,17 +5,23 @@ local TrunkHealth = 100
 local TrunkHits = 4
 local DamagerPerHit = math.ceil( TrunkHealth / TrunkHits )
 
+--The code from here
+function BurntTree.cl_sendHitToPlr( self, health )
+	SurvivalPlayer:client_hitsLeft( health, DamagerPerHit )
+end
+--To here was added by WEN
+
 function BurntTree.server_onCreate( self )
 	self.sv = {}
 	self.sv.health = TrunkHealth
 end
 
 function BurntTree.server_onProjectile( self, hitPos, hitTime, hitVelocity, projectileName, attacker, damage )
-	self:sv_onHit( DamagerPerHit )
+	self:sv_onHit( DamagerPerHit, attacker )
 end
 
 function BurntTree.server_onMelee( self, hitPos, attacker, damage )
-	self:sv_onHit( DamagerPerHit )
+	self:sv_onHit( DamagerPerHit, attacker )
 end
 
 function BurntTree.server_onExplosion( self, center, destructionLevel )
@@ -32,8 +38,15 @@ function BurntTree.server_onCollision( self, other, collisionPosition, selfPoint
 	end
 end
 
-function BurntTree.sv_onHit( self, damage )
+function BurntTree.sv_onHit( self, damage, attacker )
 	self.sv.health = self.sv.health - damage
+
+	--The code from here
+	if type( attacker ) == "Player" then
+		self.network:sendToClient( attacker, "cl_sendHitToPlr", self.sv.health )
+	end
+	--To here was added by WEN
+	
 	if self.sv.health <= 0 then
 		if not self.sv.destroyed and sm.exists( self.harvestable ) then
 			if self.data.destroyEffect then
@@ -52,5 +65,19 @@ function BurntTree.sv_onHit( self, damage )
 			self.harvestable:destroy()
 			self.sv.destroyed = true
 		end
+	end
+end
+
+function BurntTree.client_onMelee( self, hitPos, attacker, damage )
+	if type( attacker ) == "Player" then
+		local direction = attacker.character.worldPosition - hitPos
+		if direction:length() >= FLT_EPSILON then
+			direction = direction:normalize()
+		else
+			direction = -attacker.character.direction
+		end
+		local rotation = sm.quat.lookRotation( direction, sm.vec3.new( 0, 0, 1 ) )
+
+		sm.effect.playEffect( "Tree - BurnedHit", hitPos, nil, rotation )
 	end
 end

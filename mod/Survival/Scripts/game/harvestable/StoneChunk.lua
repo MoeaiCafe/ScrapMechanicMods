@@ -5,6 +5,12 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 StoneChunk = class( nil )
 StoneChunk.DamagerPerHit = 25
 
+--The code from here
+function StoneChunk.cl_sendHitToPlr( self, health )
+	SurvivalPlayer:client_hitsLeft( health, self.DamagerPerHit )
+end
+--To here was added by WEN
+
 function StoneChunk.server_onCreate( self )
 	self:sv_init()
 	
@@ -27,6 +33,13 @@ function StoneChunk.server_onMelee( self, position, attacker, damage )
 	if self.data then
 		if self.data.chunkSize <= 2 then
 			self:sv_onHit( self.DamagerPerHit, attacker )
+
+			--The code from here
+			if type( attacker ) == "Player" then
+				self.network:sendToClient( attacker, "cl_sendHitToPlr", self.health )
+			end
+			--To here was added by WEN
+
 		else
 			if type( attacker ) == "Player" then
 				self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_STONE_TOO_BIG}" )
@@ -82,7 +95,13 @@ function StoneChunk.sv_onHit( self, damage )
 end
 
 function StoneChunk.server_onExplosion( self, center, destructionLevel )
-	self:sv_onHit( 100.0 )
+	if self.data then
+		if self.data.chunkSize then
+			if self.data.chunkSize > 1 then
+				self:sv_onHit( 100.0 )
+			end
+		end
+	end
 end
 
 function StoneChunk.server_onCollision( self, other, collisionPosition, selfPointVelocity, otherPointVelocity, collisionNormal )
@@ -95,7 +114,7 @@ function StoneChunk.server_onCollision( self, other, collisionPosition, selfPoin
 					if self.data.chunkSize == 1 then
 						damage = 5
 					elseif self.data.chunkSize == 2 then
-						damage = 4
+						damage = 3.75
 					end
 				end
 				self:sv_onHit( damage )

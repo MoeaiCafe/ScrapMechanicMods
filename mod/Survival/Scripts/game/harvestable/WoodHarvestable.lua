@@ -7,6 +7,12 @@ WoodHarvestable = class( nil )
 local TrunkHealth = 100
 local DamagerPerHit = math.ceil( TrunkHealth / TREE_TRUNK_HITS )
 
+--The code from here
+function WoodHarvestable.cl_sendHitToPlr( self, health )
+	SurvivalPlayer:client_hitsLeft( health, DamagerPerHit )
+end
+--To here was added by WEN
+
 function WoodHarvestable.server_onCreate( self )
 	self:sv_init()
 end
@@ -22,14 +28,14 @@ end
 function WoodHarvestable.server_onMelee( self, hitPos, attacker, damage )
 	if self.data then
 		if self.data.type == "small" or self.data.type == "medium" then
-			self:sv_onHit( DamagerPerHit, hitPos )
+			self:sv_onHit( DamagerPerHit, hitPos, attacker )
 		elseif self.data.type == "large" then
 			if type( attacker ) == "Player" then
 				self.network:sendToClient( attacker, "cl_n_onMessage", "#{ALERT_TREE_TOO_BIG}" )
 			end
 
 			if g_survivalDev then
-				self:sv_onHit( DamagerPerHit, hitPos )
+				self:sv_onHit( DamagerPerHit, hitPos, attacker )
 			end
 		end
 	end
@@ -53,7 +59,7 @@ function WoodHarvestable.client_onMelee( self, hitPos, attacker, damage )
 	end
 end
 
-function WoodHarvestable.sv_onHit( self, damage, position )	
+function WoodHarvestable.sv_onHit( self, damage, position, attacker )	
 	
 	if not sm.exists( self.harvestable ) or self.destroyed then
 		return
@@ -116,6 +122,13 @@ function WoodHarvestable.sv_onHit( self, damage, position )
 	-- Tally damage for the tree part
 	if closestHitIdx then
 		self.treeParts[closestHitIdx].damage = self.treeParts[closestHitIdx].damage + damage
+
+		--The code from here
+		if type( attacker ) == "Player" then
+			self.network:sendToClient( attacker, "cl_sendHitToPlr", TrunkHealth-self.treeParts[closestHitIdx].damage )
+		end
+		--To here was added by WEN
+
 		-- Destroy the harvestable and turn it into parts
 		local color = self.harvestable:getColor()
 		if self.treeParts[closestHitIdx].damage >= TrunkHealth then

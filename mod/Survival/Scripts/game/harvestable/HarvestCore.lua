@@ -4,8 +4,16 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_units.lua")
 HarvestCore = class( nil )
 HarvestCore.resetStateOnInteract = false
 
+--If you want to change the refine time, modify the stuff below
+local scrapWood = 0.5
+local wood1 = 0.5
+local scrapMetal = 0.5
+local metal1 = 0.5
+local stone = 0.5
+local staminacost = 200 --per second of refining
+------------------------------------------
+
 local RefineStaminaCost = 200
-local RefineTime = 0.5
 
 function HarvestCore.server_onCreate( self )
 	self:sv_init()
@@ -44,8 +52,9 @@ function HarvestCore.client_onRefresh( self )
 	self:cl_init()
 end
 
-function HarvestCore.cl_init( self )
+function HarvestCore.cl_init( self ) 
 	self.client_refining = false
+	self.client_refineTime = 0.5
 	self.client_refineElapsed = 0.0
 	
 	self.client_effect = sm.effect.createEffect( "Harvestable - Marker", self.interactable )
@@ -54,12 +63,30 @@ end
 
 function HarvestCore.client_canInteract( self, character )
 	if character:getCharacterType() == unit_mechanic then
-		return not character:isTumbling()
-	end
-	return false
+        return not character:isTumbling()
+    end
+    return false
 end
 
 function HarvestCore.client_onInteract( self, user, state )
+	--From here
+	if self.shape.shapeUuid == obj_harvest_wood then
+		self.client_refineTime = scrapWood
+		RefineStaminaCost = scrapWood*staminacost
+	elseif self.shape.shapeUuid == obj_harvest_wood2 then
+		self.client_refineTime = wood1
+		RefineStaminaCost = wood1*staminacost
+	elseif self.shape.shapeUuid == obj_harvest_metal then
+		self.client_refineTime = scrapMetal
+		RefineStaminaCost = scrapMetal*staminacost
+	elseif self.shape.shapeUuid == obj_harvest_metal2 then
+		self.client_refineTime = metal1
+		RefineStaminaCost = metal1*staminacost
+	elseif self.shape.shapeUuid == obj_harvest_stone then
+		self.client_refineTime = stone
+		RefineStaminaCost = stone*staminacost
+	end
+	--To here was added by WEN
 	local recipe = g_refineryRecipes[tostring( self.shape.shapeUuid )]
 	local player = user:getPlayer()
 	if recipe and player then
@@ -93,16 +120,20 @@ end
 
 function HarvestCore.client_onUpdate( self, dt )
 	if self.client_refining == true then
-		sm.gui.setProgressFraction( self.client_refineElapsed / RefineTime )
+		sm.gui.setProgressFraction( self.client_refineElapsed / self.client_refineTime )
 		self.client_refineElapsed = self.client_refineElapsed + dt
-		if self.client_refineElapsed >= RefineTime then
+		--From here
+		local keyBindingText =  sm.gui.getKeyBinding( "Use" )
+		sm.gui.setInteractionText( "", keyBindingText, "#{INTERACTION_REFINE} (".. tostring( self.client_refineTime-tonumber(string.format("%.1f", self.client_refineElapsed))).. ")" )
+		--To here was added by WEN
+		if self.client_refineElapsed >= self.client_refineTime then
 			self.client_refining = false
 			self.client_refineElapsed = 0.0
 			self.network:sendToServer( "sv_refine", sm.localPlayer.getPlayer() )
 			sm.effect.playEffect( "Multiknife - Complete", self.shape.worldPosition )
 			end
 	elseif self.client_refineElapsed > 0.0 then
-		self.client_refineElapsed = math.max( self.client_refineElapsed -  0.25 * ( RefineTime - self.client_refineElapsed ) * dt, 0 )
+		self.client_refineElapsed = math.max( self.client_refineElapsed -  0.25 * ( self.client_refineTime - self.client_refineElapsed ) * dt, 0 )
 	else
 		self.client_refineElapsed = 0.0
 	end

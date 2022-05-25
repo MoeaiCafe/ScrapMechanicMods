@@ -29,6 +29,8 @@ local MeleeBreachLevel = 9
 
 local HearRange = 40.0
 
+if SurvivalGame then dofile "$SURVIVAL_DATA/Scripts/game/SurvivalPlayer.lua" end --Added by WEN
+
 function TotebotGreenUnit.server_onCreate( self )
 	
 	self.target = nil
@@ -218,6 +220,8 @@ function TotebotGreenUnit.server_onFixedUpdate( self, dt )
 			return
 		end
 	end
+
+	if SurvivalGame then SurvivalPlayer.sv_unitUpdates( self, { "Totebot", self.saved.stats.hp, self.saved.stats.maxhp, self.unit.id } ) end --Added by WEN
 
 	if self.unit.character:isSwimming() then
 		self.roamState.cliffAvoidance = false
@@ -856,6 +860,7 @@ function TotebotGreenUnit.sv_onDeath( self, impact )
 		print("'TotebotGreenUnit' killed!")
 		self:sv_spawnParts( impact )
 		if SurvivalGame then
+			SurvivalPlayer.sv_unitUpdates( self, { "Totebot", 0, self.saved.stats.maxhp, self.unit.id } ) --Added by WEN
 			local loot = SelectLoot( "loot_totebot_green" )
 			SpawnLoot( self.unit, loot )
 		end

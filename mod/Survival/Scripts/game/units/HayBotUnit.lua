@@ -17,6 +17,8 @@ local AllyRange = 20.0
 local MeleeBreachLevel = 9
 local HearRange = 40.0
 
+if SurvivalGame then dofile "$SURVIVAL_DATA/Scripts/game/SurvivalPlayer.lua" end --Added by WEN
+
 function HaybotUnit.server_onCreate( self )
 	
 	self.target = nil
@@ -255,6 +257,9 @@ function HaybotUnit.server_onDestroy( self )
 end
 
 function HaybotUnit.server_onFixedUpdate( self, dt )
+
+	if SurvivalGame then SurvivalPlayer.sv_unitUpdates( self, { "Haybot", self.saved.stats.hp, self.saved.stats.maxhp, self.unit.id } ) end --Added by WEN
+
 	if sm.exists( self.unit ) and not self.destroyed then
 		if self.saved.deathTickTimestamp and sm.game.getCurrentTick() >= self.saved.deathTickTimestamp then
 			self.unit:destroy()
@@ -1040,6 +1045,7 @@ function HaybotUnit.sv_onDeath( self, impact )
 		self.unit:sendCharacterEvent( "explode" )
 		self:sv_spawnParts( impact )
 		if SurvivalGame then
+			SurvivalPlayer.sv_unitUpdates( self, { "Haybot", 0, self.saved.stats.maxhp, self.unit.id } ) --Added by WEN
 			local loot = SelectLoot( "loot_haybot" )
 			SpawnLoot( self.unit, loot )
 		end

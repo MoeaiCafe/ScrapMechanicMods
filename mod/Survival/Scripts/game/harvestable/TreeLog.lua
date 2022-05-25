@@ -6,6 +6,12 @@ TreeLog = class( nil )
 local LogHealth = 100
 local DamagerPerHit = math.ceil( LogHealth / TREE_LOG_HITS )
 
+--The code from here
+function TreeLog.cl_sendHitToPlr( self, health )
+	SurvivalPlayer:client_hitsLeft( health, DamagerPerHit )
+end
+--To here was added by WEN
+
 function TreeLog.server_onCreate( self )
 	self:server_init()
 end
@@ -19,6 +25,13 @@ function TreeLog.server_init( self )
 end
 
 function TreeLog.server_onMelee( self, position, attacker, damage )
+
+	--The code from here
+	if type( attacker ) == "Player" then
+		self.network:sendToClient( attacker, "cl_sendHitToPlr", self.health )
+	end
+	--To here was added by WEN
+	
 	self:sv_onHit( DamagerPerHit )
 end
 

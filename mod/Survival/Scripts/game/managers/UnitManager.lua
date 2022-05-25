@@ -614,6 +614,7 @@ function UnitManager.sv_onWorldCollision( self, worldSelf, objectA, objectB, col
 	end
 end
 
+--Function modified by WaspEyeNight
 function UnitManager.sv_onWorldFixedUpdate( self, worldSelf )
 	--Inform player of incoming raids
 	for _,player in ipairs( self.newPlayers ) do
@@ -621,7 +622,7 @@ function UnitManager.sv_onWorldFixedUpdate( self, worldSelf )
 		for _, cropAttackCell in pairs( self.sv.cropAttackCells ) do
 			if cropAttackCell.saved.attackTick then
 				print( "Sending info about raid at ("..cropAttackCell.x..","..cropAttackCell.y..") to player", player.id )
-				worldSelf.network:sendToClient( player, "cl_n_unitMsg", { fn = "cl_n_detected", tick = cropAttackCell.saved.attackTick, pos = cropAttackCell.saved.attackPos } )
+				worldSelf.network:sendToClient( player, "cl_n_unitMsg", { fn = "cl_n_detected", tick = cropAttackCell.saved.attackTick, pos = cropAttackCell.saved.attackPos, level = cropAttackCell.saved.level, wave = cropAttackCell.saved.wave, cropvalue = cropAttackCell.saved.cropvalue, startTick = cropAttackCell.saved.startTick } )
 			end
 		end
 	end
@@ -632,17 +633,31 @@ function UnitManager.sv_onWorldFixedUpdate( self, worldSelf )
 		self.sv.cropAttackCellScanCooldown:tick()
 		if self.sv.cropAttackCellScanCooldown:done() then
 			local evaluatedCells = {}
-
 			-- Check for cells to scan
 			local tick = sm.game.getCurrentTick()
 			for _,cropAttackCell in pairs( self.sv.cropAttackCells ) do
-				if cropAttackCell.loaded and not cropAttackCell.saved.attackTick
-					and ( not cropAttackCell.saved.reevaluationTick or tick >= cropAttackCell.saved.reevaluationTick )
-					and ( not cropAttackCell.scanTick or tick >= cropAttackCell.scanTick ) then
+				-- WEN modified from here
+				if cropAttackCell.loaded then
+					if not cropAttackCell.saved.attackTick
+						and ( not cropAttackCell.saved.reevaluationTick or tick >= cropAttackCell.saved.reevaluationTick )
+						and ( not cropAttackCell.scanTick or tick >= cropAttackCell.scanTick ) then
 
-					cropAttackCell.saved.reevaluationTick = nil
-					evaluatedCells[#evaluatedCells + 1] = cropAttackCell
+						cropAttackCell.saved.reevaluationTick = nil
+						evaluatedCells[#evaluatedCells + 1] = cropAttackCell
+					elseif cropAttackCell.saved.attackTick then
+						worldSelf.network:sendToClients( "cl_n_unitMsg", {
+							fn = "cl_n_detected",
+							tick = cropAttackCell.saved.attackTick,
+							pos = cropAttackCell.saved.attackPos,
+							level = cropAttackCell.saved.level,
+							wave = cropAttackCell.saved.wave,
+							cropvalue = cropAttackCell.saved.cropvalue,
+							startTick = cropAttackCell.saved.startTick,
+							reload = true,
+						} )
+					end
 				end
+				--to here
 			end
 
 			-- Scan a random cell for crops
@@ -709,7 +724,7 @@ function UnitManager.sv_onWorldFixedUpdate( self, worldSelf )
 					local delay = getTicksUntilDayCycleFraction( 0 )
 
 					if cropAttackCell.saved.wave then
-						self:sv_beginRaidCountdown( worldSelf, avgPos, level, cropAttackCell.saved.wave + 1, delay )
+						self:sv_beginRaidCountdown( worldSelf, avgPos, level, cropAttackCell.saved.wave + 1, delay, cropValue )
 					elseif cropValue >= MinimumCropValueForRaid then
 						print( "FARMING DETECTED" )
 						-- Crops detected in new cell
@@ -733,7 +748,8 @@ function UnitManager.sv_onWorldFixedUpdate( self, worldSelf )
 	end
 end
 
-function UnitManager.sv_beginRaidCountdown( self, worldSelf, position, level, wave, delay )
+--Function modified by WaspEyeNight
+function UnitManager.sv_beginRaidCountdown( self, worldSelf, position, level, wave, delay, cropvalue )
 
 	local x = math.floor( position.x / 64 )
 	local y = math.floor( position.y / 64 )
@@ -747,6 +763,8 @@ function UnitManager.sv_beginRaidCountdown( self, worldSelf, position, level, wa
 	cropAttackCell.saved.attackPos = position
 	cropAttackCell.saved.level = level
 	cropAttackCell.saved.wave = wave
+	cropAttackCell.saved.cropvalue = cropvalue -- Added by WEN
+	cropAttackCell.saved.startTick = ( ( sm.game.getServerTick() + delay ) - sm.game.getServerTick() ) / 40 -- Added by WEN
 
 	sm.storage.save( { STORAGE_CHANNEL_CROP_ATTACK_CELLS, CellKey( cropAttackCell.x, cropAttackCell.y ) }, cropAttackCell.saved )
 
@@ -756,9 +774,12 @@ function UnitManager.sv_beginRaidCountdown( self, worldSelf, position, level, wa
 		pos = cropAttackCell.saved.attackPos,
 		level = cropAttackCell.saved.level,
 		wave = cropAttackCell.saved.wave,
+		cropvalue = cropAttackCell.saved.cropvalue, -- Added by WEN
+		startTick = cropAttackCell.saved.startTick, -- Added by WEN
 	} )
 end
 
+--Function modified by WaspEyeNight
 function UnitManager.sv_cancelRaidCountdown( self, worldSelf )
 	for _,cropAttackCell in pairs( self.sv.cropAttackCells ) do
 		cropAttackCell.saved.attackTick = nil
@@ -766,44 +787,79 @@ function UnitManager.sv_cancelRaidCountdown( self, worldSelf )
 		cropAttackCell.saved.level = nil
 		cropAttackCell.saved.wave = nil
 		cropAttackCell.saved.reevaluationTick = nil
+		cropAttackCell.saved.cropvalue = nil -- Added by WEN
+		cropAttackCell.saved.startTick = nil -- Added by WEN
 		worldSelf.network:sendToClients( "cl_n_unitMsg", { fn = "cl_n_cancel" } )
 	end
 end
 
+--Function modified by WaspEyeNight
 function UnitManager.cl_onWorldUpdate( self, worldSelf, deltaTime )
 	removeFromArray( self.cl.attacks, function( attack )
 		local timeLeft = ( attack.tick - sm.game.getServerTick() ) / 40
-		attack.gui:setText( "Text", "#ff0000"..formatCountdown( timeLeft ) )
+		formattedCountdown = formatCountdown( timeLeft ) -- Added by WEN
+		if attack.raidGuiNum then SurvivalPlayer:client_onRaidCountdownUpdate(formattedCountdown, attack, timeLeft) end -- Added by WEN
+		attack.gui:setText( "Text", "#ff0000"..formattedCountdown ) -- Modified by WEN
 		if timeLeft < 0 then
 			attack.gui:destroy()
+			SurvivalPlayer:client_onRaidCountdownStop( attack ) -- Added by WEN
 			return true
 		end
 		return false
 	end )
 end
 
+--Function modified by WaspEyeNight
 function UnitManager.cl_n_detected( self, msg )
-	--if msg.wave == 1 then
-		sm.gui.displayAlertText( "#{ALERT_FARMING_DETECTED}", 10 )
-	--end
 
-	local gui = sm.gui.createNameTagGui()
-	gui:setWorldPosition( msg.pos + sm.vec3.new( 0, 0, 0.5 ) )
-	gui:setRequireLineOfSight( false )
-	gui:open()
-	gui:setMaxRenderDistance( 500 )
-	gui:setText( "Text", "#ff0000"..formatCountdown( ( msg.tick - sm.game.getServerTick() ) / 40 ) )
+	local eigk = tostring(msg.pos.x/64).. tostring(msg.pos.y/64)
 
-	self.cl.attacks[#self.cl.attacks + 1] = { gui = gui, tick = msg.tick }
+	local hasBeenDetected = false
+	for i = 1,#self.cl.attacks do
+		if eigk == self.cl.attacks[i].raidGuiKey then
+			hasBeenDetected = true
+			break
+		end
+	end
+
+	if hasBeenDetected == false then
+		if not msg.reload then
+			sm.gui.displayAlertText( "#{ALERT_FARMING_DETECTED}", 10 )
+		end
+
+	
+		local gui = sm.gui.createNameTagGui()
+		guiPos = msg.pos + sm.vec3.new( 0, 0, 0.5 )
+		gui:setWorldPosition( guiPos )
+		gui:setRequireLineOfSight( false )
+		--gui:open()
+		gui:setMaxRenderDistance( 500 )
+		gui:setText( "Text", "#ff0000"..formatCountdown( ( msg.tick - sm.game.getServerTick() ) / 40 ) )
+
+		local raidGuiNum = SurvivalPlayer:client_onRaidCountdownStart(eigk, guiPos, msg.level, msg.wave, msg.cropvalue, gui)
+
+		self.cl.attacks[#self.cl.attacks + 1] = { gui = gui, tick = msg.tick, raidGuiKey = eigk, startTick = msg.startTick, raidGuiNum = raidGuiNum }
+	end
 end
 
 -- function UnitManager.cl_n_waveMsg( self, msg )
 -- 	sm.gui.displayAlertText( "[WAVE "..msg.wave.."]", 5 )
 -- end
 
+--Function modified by WaspEyeNight
 function UnitManager.cl_n_cancel( self, msg )
 	for _,attack in ipairs( self.cl.attacks ) do
 		attack.gui:destroy()
+		SurvivalPlayer:client_onRaidCountdownStop( attack )
 	end
 	self.cl.attacks = {}
 end
+
+--ExI stuff
+--Functions added by WaspEyeNight
+function UnitManager.client_filecheck( self ) end
+
+function UnitManager.getraidersforlevel(self, level, wave)
+	return Raiders[level][wave]
+end
+------------------------

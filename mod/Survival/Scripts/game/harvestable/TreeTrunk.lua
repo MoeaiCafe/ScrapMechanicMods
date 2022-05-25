@@ -8,6 +8,12 @@ local SelfdestructTickTime = 40 * 22
 local TrunkHealth = 100
 local DamagerPerHit = math.ceil( TrunkHealth / TREE_TRUNK_HITS )
 
+--The code from here
+function TreeTrunk.cl_sendHitToPlr( self, health )
+	SurvivalPlayer:client_hitsLeft( health, DamagerPerHit )
+end
+--To here was added by WEN
+
 -- Server
 
 function TreeTrunk.server_onCreate( self )
@@ -96,6 +102,13 @@ function TreeTrunk.server_onMelee( self, position, attacker, damage )
 	if self.data then
 		if self.data.treeType == "small" or self.data.treeType == "medium" then
 			self:sv_onHit( DamagerPerHit )
+
+			--The code from here
+			if type( attacker ) == "Player" then
+				self.network:sendToClient( attacker, "cl_sendHitToPlr", self.sv.health )
+			end
+			--To here was added by WEN
+			
 			if self.sv.health > 0 then
 				self:sv_triggerCreak( position )
 			end
