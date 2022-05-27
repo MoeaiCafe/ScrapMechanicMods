@@ -599,7 +599,8 @@ function CharacterCollision( self, other, vCollisionPosition, vPointVelocitySelf
 	if fFallDamageFraction > 0.5 then
 		fallTumbleTicks = MEDIUM_TUMBLE_TICK_TIME
 	end
-	fallDamage = fFallDamageFraction * ( maxhp or 100 )
+	-- fallDamage = fFallDamageFraction * ( maxhp or 100 )
+	fallDamage = 0
 
 
 	local isSafeShape = false
