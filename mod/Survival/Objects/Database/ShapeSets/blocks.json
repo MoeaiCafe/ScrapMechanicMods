@@ -16,7 +16,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0,
 			"qualityLevel": 2
 		},
@@ -36,7 +36,7 @@
 				"buoyancy": 8
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0,
 			"qualityLevel": 3
 		},
@@ -56,7 +56,7 @@
 				"buoyancy": 9
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0,
 			"qualityLevel": 3
 		},
@@ -76,7 +76,7 @@
 				"buoyancy": 2
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0,
 			"qualityLevel": 2
 		},
@@ -96,7 +96,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0,
 			"qualityLevel": 5
 		},
@@ -116,7 +116,7 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0,
 			"qualityLevel": 5
 		},
@@ -136,7 +136,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 500.0,
 			"qualityLevel": 2
 		},
@@ -156,7 +156,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 500,
+			"stackSize": 5000,
 			"density": 500.0,
 			"qualityLevel": 4
 		},
@@ -176,7 +176,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 500.0,
 			"qualityLevel": 4
 		},
@@ -196,7 +196,7 @@
 				"buoyancy": 4
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"restrictions": {
 				"destructable": true,
 				"erasable": false,
@@ -220,7 +220,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -239,7 +239,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -258,7 +258,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -278,7 +278,7 @@
 				"buoyancy": 8
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -297,7 +297,7 @@
 				"buoyancy": 7
 			},
 			"flammable": false,
-			"stackSize": 512
+			"stackSize": 5000
 		},
 		{
 			"uuid": "9be6047c-3d44-44db-b4b9-9bcf8a9aab20",
@@ -315,7 +315,7 @@
 				"buoyancy": 6
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0
 		},
 		{
@@ -334,7 +334,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0
 		},
 		{
@@ -353,7 +353,7 @@
 				"buoyancy": 4
 			},
 			"flammable": true,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0
 		},
 		{
@@ -372,7 +372,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0
 		},
 		{
@@ -392,7 +392,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -412,7 +412,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -432,7 +432,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -452,7 +452,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -472,7 +472,7 @@
 				"buoyancy": 2
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 1250.0
 		},
 		{
@@ -491,7 +491,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 512
+			"stackSize": 5000
 		},
 		{
 			"uuid": "f7d4bfed-1093-49b9-be32-394c872a1ef4",
@@ -509,7 +509,7 @@
 				"buoyancy": 2
 			},
 			"flammable": false,
-			"stackSize": 512
+			"stackSize": 5000
 		},
 		{
 			"uuid": "3e3242e4-1791-4f70-8d1d-0ae9ba3ee94c",
@@ -527,7 +527,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512
+			"stackSize": 5000
 		},
 		{
 			"uuid": "d740a27d-cc0f-4866-9e07-6a5c516ad719",
@@ -545,7 +545,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512
+			"stackSize": 5000
 		},
 		{
 			"uuid": "4ad97d49-c8a5-47f3-ace3-d56ba3affe50",
@@ -563,7 +563,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c56700d9-bbe5-4b17-95ed-cef05bd8be1b",
@@ -581,7 +581,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0,
 			"qualityLevel": 1
 		},
@@ -602,7 +602,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"density": 250.0,
 			"qualityLevel": 1
 		}

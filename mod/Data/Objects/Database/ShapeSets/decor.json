@@ -158,7 +158,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 500
 		},
 		{
 			"uuid": "edd445cc-c298-4ce3-9a58-745c1bee1bc7",
@@ -182,7 +182,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 500
 		},
 		{
 			"uuid": "2ccaa006-008e-4069-8de1-15668050f92e",

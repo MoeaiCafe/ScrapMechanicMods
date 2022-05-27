@@ -101,7 +101,7 @@
 				"buoyancy": 8
 			},
 			"flammable": false,
-			"stackSize": 5,
+			"stackSize": 500,
 			"density": 250.0
 		},
 		{
@@ -126,7 +126,7 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"stackSize": 5,
+			"stackSize": 500,
 			"density": 250.0,
 			"pipe": {
 				"openings": [

@@ -48,7 +48,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "d3fdedca-7e1c-45cc-a1db-f0deee381a71"
 			},
@@ -102,7 +102,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "bb600268-cd29-4715-babe-5fd02645eb1c"
 			},
@@ -156,7 +156,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "b1a17952-b6a2-436d-81e4-df8ffb552166"
 			},
@@ -210,7 +210,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "1337f492-aa23-42d0-af7a-fae45b47e55f"
 			},
@@ -264,7 +264,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "6dd177f4-3312-4b1e-a986-4421b5e83bff"
 			},
@@ -318,7 +318,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "18efedc5-8706-4ecb-afd4-e9294d3f1052"
 			},
@@ -372,7 +372,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "c6f80a93-5b16-45ef-a478-ca56a50f61ae"
 			},
@@ -426,7 +426,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "1675314b-0dfc-4d34-b854-0bdf0476221d"
 			},
@@ -480,7 +480,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "ec1cf82f-e8f3-4ca6-8e35-a4bdf0e8e259"
 			},
@@ -911,7 +911,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 100
+			"stackSize": 500
 		},
 		{
 			"uuid": "93c27ab2-4930-4654-ba1c-bcfe35e966f6",
@@ -961,7 +961,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"plantable": {
 				"harvestable": "779b5e09-7ce7-4a16-9817-02f5cb8e11f6"
 			},

@@ -37,7 +37,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50
+			"stackSize": 500
 		},
 		{
 			"uuid": "910a7f2c-52b0-46eb-8873-ad13255539af",
@@ -76,7 +76,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50
+			"stackSize": 500
 		},
 		{
 			"uuid": "869d4736-289a-4952-96cd-8a40117a2d28",
@@ -115,7 +115,7 @@
 				"buoyancy": 7
 			},
 			"flammable": false,
-			"stackSize": 50
+			"stackSize": 500
 		},
 		{
 			"uuid": "ac0b5b0a-14e1-4b31-8944-0a351fbfcc67",
@@ -153,7 +153,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"autoTool": "f26a26bf-b9be-4e59-83e4-da2e9e6dd285"
 		},
 		{
@@ -201,7 +201,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50
+			"stackSize": 500
 		},
 		{
 			"uuid": "5530e6a0-4748-4926-b134-50ca9ecb9dcf",
@@ -262,7 +262,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50
+			"stackSize": 500
 		},
 		{
 			"uuid": "3a3280e4-03b6-4a4d-9e02-e348478213c9",
@@ -310,7 +310,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"autoTool": "9506abb9-e415-4229-a824-28a479cca788"
 		},
 		{
@@ -350,7 +350,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 10,
 				"foodGain": 25,
@@ -380,7 +380,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 50,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 100,
 				"foodGain": 100,
@@ -409,7 +409,7 @@
 				"buoyancy": 7
 			},
 			"flammable": true,
-			"stackSize": 50,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 100,
 				"foodGain": 100,
@@ -462,7 +462,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 50,
+			"stackSize": 500,
 			"autoTool": "87cf94fa-a52a-47bd-8d62-47a2e10fe2af"
 		},
 		{
@@ -511,7 +511,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 50,
+			"stackSize": 500,
 			"edible": {
 				"hpGain": 0,
 				"foodGain": 10,
@@ -558,7 +558,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 100,
+			"stackSize": 500,
 			"autoTool": "3ef5412a-7044-45ae-9592-9ce86bd99081"
 		}
 	]

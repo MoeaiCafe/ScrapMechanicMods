@@ -54,7 +54,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "GasolineContainer",
 				"data": {
-					"stackSize": 50,
+					"stackSize": 500,
 					"filterUid": "d4d68946-aa03-4b8f-b1af-96b81ad4e305"
 				}
 			},
@@ -67,7 +67,7 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"stackSize": 50,
+			"stackSize": 500,
 			"density": 250.0,
 			"pipe": {
 				"openings": [
@@ -140,7 +140,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "WaterContainer",
 				"data": {
-					"stackSize": 50,
+					"stackSize": 500,
 					"filterUid": "869d4736-289a-4952-96cd-8a40117a2d28"
 				}
 			},
@@ -153,7 +153,7 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"stackSize": 50,
+			"stackSize": 500,
 			"density": 250.0,
 			"pipe": {
 				"openings": [
@@ -226,7 +226,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "ConsumableContainer",
 				"data": {
-					"stackSize": 50,
+					"stackSize": 500,
 					"filterUid": "ac0b5b0a-14e1-4b31-8944-0a351fbfcc67"
 				}
 			},
@@ -311,7 +311,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "BatteryContainer",
 				"data": {
-					"stackSize": 50,
+					"stackSize": 500,
 					"filterUid": "910a7f2c-52b0-46eb-8873-ad13255539af"
 				}
 			},
@@ -396,7 +396,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "AmmoContainer",
 				"data": {
-					"stackSize": 100,
+					"stackSize": 500,
 					"filterUid": "bfcfac34-db0f-42d6-bd0c-74a7a5c95e82"
 				}
 			},
@@ -481,7 +481,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "SeedContainer",
 				"data": {
-					"stackSize": 50
+					"stackSize": 500
 				}
 			},
 			"rotationSet": "PropYZ",
@@ -573,7 +573,7 @@
 				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
 				"classname": "ConsumableContainer",
 				"data": {
-					"stackSize": 50,
+					"stackSize": 500,
 					"filterUid": "f74c2891-79a9-45e0-982e-4896651c2e25"
 				}
 			},

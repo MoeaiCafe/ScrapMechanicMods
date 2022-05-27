@@ -2,7 +2,7 @@ dofile "$GAME_DATA/Scripts/game/AnimationUtil.lua"
 dofile "$SURVIVAL_DATA/Scripts/util.lua"
 dofile "$SURVIVAL_DATA/Scripts/game/survival_shapes.lua"
 
-local Damage = 28
+local Damage = 100
 
 PotatoRifle = class()
 
@@ -547,7 +547,8 @@ function PotatoRifle.cl_onPrimaryUse( self, state )
 
 	if self.fireCooldownTimer <= 0.0 and state == sm.tool.interactState.start then
 
-		if not sm.game.getEnableAmmoConsumption() or sm.container.canSpend( sm.localPlayer.getInventory(), obj_plantables_potato, 1 ) then
+		-- if not sm.game.getEnableAmmoConsumption() or sm.container.canSpend( sm.localPlayer.getInventory(), obj_plantables_potato, 0 ) then
+		if true then
 			local firstPerson = self.tool:isInFirstPersonView()
 
 			local dir = sm.localPlayer.getDirection()

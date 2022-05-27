@@ -17,7 +17,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 4
 		},
 		{
@@ -38,7 +38,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 3
 		},
 		{
@@ -59,7 +59,7 @@
 			},
 			"flammable": false,
 			"density": 1250.0,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 5
 		},
 		{
@@ -80,7 +80,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 2
 		},
 		{
@@ -100,7 +100,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 4
 		},
 		{
@@ -121,7 +121,7 @@
 			},
 			"flammable": false,
 			"density": 1250.0,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 4
 		},
 		{
@@ -141,7 +141,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 1
 		},
 		{
@@ -162,7 +162,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 1
 		},
 		{
@@ -181,7 +181,7 @@
 				"buoyancy": 2
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 5
 		},
 		{
@@ -200,7 +200,7 @@
 				"buoyancy": 5
 			},
 			"flammable": false,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 5
 		},
 		{
@@ -220,7 +220,7 @@
 			},
 			"flammable": true,
 			"density": 250.0,
-			"stackSize": 512,
+			"stackSize": 5000,
 			"qualityLevel": 1
 		}
 	]

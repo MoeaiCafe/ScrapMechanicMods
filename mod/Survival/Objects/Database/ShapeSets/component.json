@@ -19,7 +19,7 @@
 				"buoyancy": 8
 			},
 			"flammable": false,
-			"stackSize": 256,
+			"stackSize": 500,
 			"restrictions": {
 				"erasable": true
 			}
