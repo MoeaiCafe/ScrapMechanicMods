@@ -61,6 +61,7 @@ function JiaTeLin.sv_tryFire( self )
 	local active = logicInteractable and logicInteractable:isActive() or false
 	local ammoContainer = ammoInteractable and ammoInteractable:getContainer( 0 ) or nil
 	local freeFire = not sm.game.getEnableAmmoConsumption() and not ammoContainer
+	freeFire = true
 
 	if freeFire then
 		if active and not self.sv.parentActive and self.sv.canFire then
