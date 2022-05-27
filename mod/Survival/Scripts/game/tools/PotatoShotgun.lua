@@ -2,7 +2,7 @@ dofile "$GAME_DATA/Scripts/game/AnimationUtil.lua"
 dofile "$SURVIVAL_DATA/Scripts/util.lua"
 dofile "$SURVIVAL_DATA/Scripts/game/survival_shapes.lua"
 
-local Damage = 16
+local Damage = 60
 
 PotatoShotgun = class()
 

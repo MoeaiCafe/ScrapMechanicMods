@@ -15,7 +15,7 @@ local FireDelay = 5 --ticks
 local MinForce = 410.0
 local MaxForce = 390.0
 local SpreadDeg = 1.0
-local Damage = 28
+local Damage = 60
 local recoilForce = 0.2	--后坐力倍数
 
 

@@ -9,7 +9,7 @@ JiGuang.colorHighlight = sm.color.new( 0xfe0a00ff )
 JiGuang.poseWeightCount = 1
 JiGuang.cooldownToEnable = 200
 JiGuang.fireoffset = 0
-JiGuang.Damage = 28
+JiGuang.Damage = 100
 
 
 function JiGuang.server_onCreate( self ) 

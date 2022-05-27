@@ -13,7 +13,7 @@ local FireDelay = 8 --ticks
 local MinForce = 125.0
 local MaxForce = 135.0
 local SpreadDeg = 1.0
-local Damage = 28
+local Damage = 100
 
 
 --[[ Server ]]
