@@ -883,7 +883,8 @@ function TotebotGreenUnit.sv_spawnParts( self, impact )
 	bodyPos = bodyPos - bodyOffset
 
 	local color = self.unit.character:getColor()
-	if SurvivalGame then
+	-- if SurvivalGame then
+	if false then
 		if math.random( 1, 5 ) == 1 then
 			local headBody = sm.body.createBody( bodyPos, bodyRot, true )
 			local headShape = headBody:createPart( obj_interactive_robotbliphead01, sm.vec3.new( 0, 1, 2 ), sm.vec3.new( 0, 1, 0 ), sm.vec3.new( -1, 0, 0 ), true )
