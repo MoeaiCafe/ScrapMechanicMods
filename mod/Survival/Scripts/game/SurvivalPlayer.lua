@@ -309,11 +309,11 @@ local BreathLostPerTick = ( 100 / 100 ) / 40 -- 游泳时每Tick消耗的氧气
 
 local FatigueDamageHp = 1 * PerSecond
 local FatigueDamageWater = 2 * PerSecond
-local FireDamage = 10
+local FireDamage = 0			-- 10
 local FireDamageCooldown = 40
-local DrownDamage = 5
+local DrownDamage = 0		-- 5
 local DrownDamageCooldown = 40
-local PoisonDamage = 10
+local PoisonDamage = 0		-- 10
 local PoisonDamageCooldown = 40
 
 local RespawnTimeout = 60 * 40
