@@ -110,15 +110,15 @@ local random_officeloot = {
 
 local random_loot_startarea = {
 	{ uuid = obj_scrap_smallwheel,			chance = 10 },
-	{ uuid = obj_consumable_gas,			chance = 25,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_consumable_chemical,		chance = 15,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_consumable_soilbag,		chance = 25,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_plantables_carrot,			chance = 25,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_plantables_redbeet,		chance = 25,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_plantables_tomato,			chance = 25,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_seed_carrot,				chance = 20,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_seed_redbeet,				chance = 20,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_seed_tomato,				chance = 20,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_consumable_gas,			chance = 25,	quantity = randomStackAmount2 },
+	{ uuid = obj_consumable_chemical,		chance = 15,	quantity = randomStackAmount2 },
+	{ uuid = obj_consumable_soilbag,		chance = 25,	quantity = randomStackAmount2 },
+	{ uuid = obj_plantables_carrot,			chance = 25,	quantity = randomStackAmount2 },
+	{ uuid = obj_plantables_redbeet,		chance = 25,	quantity = randomStackAmount2 },
+	{ uuid = obj_plantables_tomato,			chance = 25,	quantity = randomStackAmount2 },
+	{ uuid = obj_seed_carrot,				chance = 20,	quantity = randomStackAmount2 },
+	{ uuid = obj_seed_redbeet,				chance = 20,	quantity = randomStackAmount2 },
+	{ uuid = obj_seed_tomato,				chance = 20,	quantity = randomStackAmount2 },
 	{ uuid = jnt_bearing,					chance = 10,	quantity = 1 },
 }
 
@@ -126,14 +126,14 @@ local lootTables = {}
 
 -- Loot crates
 lootTables.loot_crate_epic = {
-	slots = function() return 3 end,
+	slots = function() return randomStackAmount( 3, 4, 5 ) end,
 	selectOne = {
 		{ uuid = obj_outfitpackage_common, 			chance = 50 },
 		{ uuid = obj_outfitpackage_rare, 			chance = 30 },
 		{ uuid = obj_outfitpackage_epic, 			chance = 10 },
 
 		{ uuid = obj_consumable_soilbag, 			chance = 50,	quantity = 10 },
-		{ uuid = obj_consumable_component, 			chance = 50,	quantity = 2 },
+		{ uuid = obj_consumable_component, 			chance = 50,	quantity = 20 },
 
 		{ uuid = jnt_suspensionoffroad_01, 			chance = 20 },
 		{ uuid = jnt_suspensionsport_01, 			chance = 20 },
@@ -156,7 +156,7 @@ lootTables.loot_crate_epic = {
 }
 
 lootTables.loot_crate_epic_warehouse = {
-	slots = function() return 3 end,
+	slots = function() return randomStackAmount( 3, 4, 5 ) end,
 	selectOne = {
 		{ uuid = jnt_suspensionoffroad_03, 			chance = 1 },
 		{ uuid = jnt_suspensionsport_03, 			chance = 1 },
@@ -175,9 +175,9 @@ lootTables.loot_crate_epic_warehouse = {
 lootTables.loot_crate_standard = {
 	slots = function() return randomStackAmount( 2, 3, 4 ) end,
 	selectOne = {
-		{ uuid = obj_outfitpackage_common, 		chance = 5,		quantity = 1 },
+		{ uuid = obj_outfitpackage_common, 		chance = 5 },
 
-		{ uuid = obj_consumable_component,		chance = 45,		quantity = 2 },
+		{ uuid = obj_consumable_component,		chance = 45 },
 		-- { uuid = nil,							chance = 50 }, -- No loot from selectOne
 	},
 	randomLoot = random_loot
