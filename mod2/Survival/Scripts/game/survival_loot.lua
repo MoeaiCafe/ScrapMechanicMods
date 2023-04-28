@@ -8,7 +8,7 @@ dofile( "$SURVIVAL_DATA/Scripts/game/survival_projectiles.lua" )
 -- A chance of 100 makes the item 100 times more likely than with a chance of 1
 
 local random_loot = {
-	{ uuid = obj_plantables_carrot, 		chance = 15,	quantity = 10 },
+	{ uuid = obj_plantables_carrot, 		chance = 15,	quantity = 1 },
 	{ uuid = obj_plantables_redbeet, 		chance = 15,	quantity = 1 },
 	{ uuid = obj_plantables_tomato, 		chance = 15,	quantity = 1 },
 	{ uuid = obj_plantables_banana, 		chance = 10,	quantity = 1 },
@@ -23,14 +23,14 @@ local random_loot = {
 	{ uuid = obj_consumable_water,			chance = 10,	quantity = randomStackAmount5 },
 	{ uuid = obj_consumable_chemical,		chance = 70,	quantity = randomStackAmount5 },
 	{ uuid = obj_consumable_fertilizer,		chance = 25,	quantity = randomStackAmount5 },
-	{ uuid = obj_consumable_component,		chance = 70,	quantity = 5 },
+	{ uuid = obj_consumable_component,		chance = 70,	quantity = 1 },
 	{ uuid = obj_consumable_inkammo,		chance = 25,	quantity = randomStackAmount10 },
 	{ uuid = obj_consumable_glowstick,		chance = 20,	quantity = 1 },
 	{ uuid = obj_consumable_soilbag,		chance = 40,	quantity = 1 },
 
-	{ uuid = obj_resource_circuitboard,		chance = 50,	quantity = 5 },
+	{ uuid = obj_resource_circuitboard,		chance = 50,	quantity = 1 },
 
-	{ uuid = obj_seed_carrot,				chance = 20,	quantity = 10 },
+	{ uuid = obj_seed_carrot,				chance = 20,	quantity = 1 },
 	{ uuid = obj_seed_redbeet,				chance = 20,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_seed_tomato,				chance = 20,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_seed_potato,				chance = 20,	quantity = randomStackAmountAvg2 },
@@ -53,18 +53,18 @@ local random_epicloot = {
 	{ uuid = obj_consumable_longsandwich, 	chance = 15 },
 
 	{ uuid = obj_consumable_gas,			chance = 60,	quantity = randomStackAmountAvg5 },
-	{ uuid = obj_consumable_battery,		chance = 40,	quantity = randomStackAmount5 },
+	{ uuid = obj_consumable_battery,		chance = 40,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_water,			chance = 10,	quantity = randomStackAmount10 },
 	{ uuid = obj_consumable_chemical,		chance = 70,	quantity = randomStackAmount10 },
 	{ uuid = obj_consumable_fertilizer,		chance = 25,	quantity = randomStackAmount10 },
-	{ uuid = obj_consumable_component,		chance = 70,	quantity = 5 },
+	{ uuid = obj_consumable_component,		chance = 70,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_consumable_inkammo,		chance = 25,	quantity = randomStackAmount20 },
 	{ uuid = obj_consumable_glowstick,		chance = 20,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_consumable_soilbag,		chance = 40,	quantity = randomStackAmountAvg2 },
 
-	{ uuid = obj_resource_circuitboard,		chance = 50,	quantity = 10 },
+	{ uuid = obj_resource_circuitboard,		chance = 50,	quantity = randomStackAmountAvg2 },
 
-	{ uuid = obj_seed_carrot,				chance = 20,	quantity = 10 },
+	{ uuid = obj_seed_carrot,				chance = 20,	quantity = 1 },
 	{ uuid = obj_seed_redbeet,				chance = 20,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_seed_tomato,				chance = 20,	quantity = randomStackAmountAvg2 },
 	{ uuid = obj_seed_potato,				chance = 20,	quantity = randomStackAmountAvg2 },
@@ -79,7 +79,7 @@ local random_epicloot = {
 }
 
 local random_warehouseloot = {
-	{ uuid = obj_plantables_carrot, 		chance = 5,		quantity = 10 },
+	{ uuid = obj_plantables_carrot, 		chance = 5,		quantity = 1 },
 	{ uuid = obj_plantables_redbeet, 		chance = 5,		quantity = randomStackAmountAvg2 },
 	{ uuid = obj_plantables_tomato, 		chance = 5,		quantity = randomStackAmountAvg2 },
 	{ uuid = obj_plantables_banana, 		chance = 5,		quantity = randomStackAmountAvg2 },
@@ -89,37 +89,37 @@ local random_warehouseloot = {
 	{ uuid = obj_plantables_broccoli, 		chance = 5,		quantity = randomStackAmountAvg2 },
 	{ uuid = obj_consumable_sunshake, 		chance = 15 },
 	{ uuid = obj_plantables_potato, 		chance = 20,	quantity = randomStackAmountAvg10 },
-	{ uuid = obj_resource_circuitboard,		chance = 50,	quantity = 10 },
+	{ uuid = obj_resource_circuitboard,		chance = 50,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_gas,			chance = 60,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_battery,		chance = 40,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_fertilizer,		chance = 25,	quantity = randomStackAmountAvg10 },
 	{ uuid = obj_consumable_soilbag,		chance = 40,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_consumable_component,		chance = 70,	quantity = 10 },
+	{ uuid = obj_consumable_component,		chance = 70,	quantity = randomStackAmountAvg5 },
 }
 
 local random_officeloot = {
-	{ uuid = obj_consumable_component,		chance = 10,	quantity = 1 },
-	{ uuid = obj_resource_circuitboard,		chance = 10, 	quantity = randomStackAmount2 },
+	{ uuid = obj_consumable_component,		chance = 10,	quantity = randomStackAmountAvg5 },
+	{ uuid = obj_resource_circuitboard,		chance = 10, 	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_battery,		chance = 10,	quantity = randomStackAmountAvg5 },
-	{ uuid = obj_consumable_sunshake, 		chance = 30, 	quantity = randomStackAmount2 },
+	{ uuid = obj_consumable_sunshake, 		chance = 30, 	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_plantables_potato, 		chance = 30,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_glowstick,		chance = 30,	quantity = randomStackAmountAvg5 },
 	{ uuid = obj_consumable_inkammo,		chance = 65,	quantity = randomStackAmount20 },
-	{ uuid = obj_consumable_glue,			chance = 65,	quantity = 1 },
+	{ uuid = obj_consumable_glue,			chance = 65,	quantity = randomStackAmountAvg5 },
 }
 
 local random_loot_startarea = {
 	{ uuid = obj_scrap_smallwheel,			chance = 10 },
 	{ uuid = obj_consumable_gas,			chance = 25,	quantity = randomStackAmountAvg3 },
-	{ uuid = obj_consumable_chemical,		chance = 15,	quantity = randomStackAmount5 },
-	{ uuid = obj_consumable_soilbag,		chance = 25,	quantity = 1 },
-	{ uuid = obj_plantables_carrot,			chance = 25,	quantity = 10 },
-	{ uuid = obj_plantables_redbeet,		chance = 25,	quantity = 1 },
-	{ uuid = obj_plantables_tomato,			chance = 25,	quantity = 1 },
-	{ uuid = obj_seed_carrot,				chance = 20,	quantity = 10 },
-	{ uuid = obj_seed_redbeet,				chance = 20,	quantity = randomStackAmountAvg2 },
-	{ uuid = obj_seed_tomato,				chance = 20,	quantity = randomStackAmountAvg2 },
-	{ uuid = jnt_bearing,					chance = 10 },
+	{ uuid = obj_consumable_chemical,		chance = 15,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_consumable_soilbag,		chance = 25,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_plantables_carrot,			chance = 25,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_plantables_redbeet,		chance = 25,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_plantables_tomato,			chance = 25,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_seed_carrot,				chance = 20,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_seed_redbeet,				chance = 20,	quantity = randomStackAmountAvg3 },
+	{ uuid = obj_seed_tomato,				chance = 20,	quantity = randomStackAmountAvg3 },
+	{ uuid = jnt_bearing,					chance = 10,	quantity = 1 },
 }
 
 local lootTables = {}
@@ -133,7 +133,7 @@ lootTables.loot_crate_epic = {
 		{ uuid = obj_outfitpackage_epic, 			chance = 10 },
 
 		{ uuid = obj_consumable_soilbag, 			chance = 50,	quantity = 10 },
-		{ uuid = obj_consumable_component, 			chance = 50,	quantity = 10 },
+		{ uuid = obj_consumable_component, 			chance = 50,	quantity = 2 },
 
 		{ uuid = jnt_suspensionoffroad_01, 			chance = 20 },
 		{ uuid = jnt_suspensionsport_01, 			chance = 20 },
@@ -175,9 +175,9 @@ lootTables.loot_crate_epic_warehouse = {
 lootTables.loot_crate_standard = {
 	slots = function() return randomStackAmount( 2, 3, 4 ) end,
 	selectOne = {
-		{ uuid = obj_outfitpackage_common, 		chance = 10,		quantity = 5 },
+		{ uuid = obj_outfitpackage_common, 		chance = 5,		quantity = 1 },
 
-		{ uuid = obj_consumable_component,		chance = 40,		quantity = 10 },
+		{ uuid = obj_consumable_component,		chance = 45,		quantity = 2 },
 		-- { uuid = nil,							chance = 50 }, -- No loot from selectOne
 	},
 	randomLoot = random_loot
@@ -189,7 +189,7 @@ lootTables.loot_crate_startarea = {
 		{ uuid = obj_consumable_sunshake,		chance = 1 },
 		{ uuid = obj_consumable_component,		chance = 1 },
 		{ uuid = obj_resource_circuitboard,		chance = 1 },
-		{ uuid = nil,							chance = 2 }, -- No loot from selectOne
+		-- { uuid = nil,							chance = 2 }, -- No loot from selectOne
 	},
 	randomLoot = random_loot_startarea
 }
@@ -199,7 +199,7 @@ lootTables.loot_crate_standard_warehouse = {
 	selectOne = {
 		{ uuid = obj_plantables_broccoli, 		chance = 1,		quantity = 1 },
 		{ uuid = obj_plantables_pineapple, 		chance = 1,		quantity = 1 },
-		{ uuid = nil,							chance = 5 }, -- No loot from selectOne
+		-- { uuid = nil,							chance = 5 }, -- No loot from selectOne
 	},
 	randomLoot = random_warehouseloot
 }
@@ -236,21 +236,21 @@ lootTables.loot_ruinchest_startarea = {
 lootTables.loot_woc = {
 	slots = function() return 1 end,
 	randomLoot = {
-	{ uuid = obj_resource_steak,				chance = 1 },
+	{ uuid = obj_resource_steak,				chance = 10 },
 	}
 }
 
 lootTables.loot_woc_milk = {
 	slots = function() return 1 end,
 	randomLoot = {
-		{ uuid = obj_consumable_milk,			chance = 1 },
+		{ uuid = obj_consumable_milk,			chance = 10 },
 	}
 }
 
 lootTables.loot_glow_goop = {
 	slots = function() return 1 end,
 	randomLoot = {
-		{ uuid = obj_resource_glowpoop,			chance = 1 },
+		{ uuid = obj_resource_glowpoop,			chance = 10 },
 	}
 }
 
