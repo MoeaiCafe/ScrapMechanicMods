@@ -1,29 +1,34 @@
 import { readFile, writeFile } from 'fs/promises';
 
 const LIST = [
-  'blocks.json',
-  'building.json',
-  'component.json',
-  'consumable.json',
-  'consumable_shared.json',
-  'decor.json',
-  'fittings.json',
-  'industrial.json',
-  'interactive.json',
-  'interactivecontainers.json',
-  'interactivecontainers_shared.json',
-  'outfitpackage.json',
-  'plantables.json',
-  'spaceship.json',
-  'vehicle.json',
-  'warehouse.json',
+  'mod2/Data/Objects/Database/ShapeSets/blocks.json',
+  'mod2/Data/Objects/Database/ShapeSets/decor.json',
+  'mod2/Data/Objects/Database/ShapeSets/fittings.json',
+  'mod2/Data/Objects/Database/ShapeSets/industrial.json',
+  'mod2/Data/Objects/Database/ShapeSets/interactive.json',
+  'mod2/Data/Objects/Database/ShapeSets/spaceship.json',
+  'mod2/Data/Objects/Database/ShapeSets/vehicle.json',
+
+  'mod2/Survival/Objects/Database/ShapeSets/blocks.json',
+  'mod2/Survival/Objects/Database/ShapeSets/building.json',
+  'mod2/Survival/Objects/Database/ShapeSets/component.json',
+  'mod2/Survival/Objects/Database/ShapeSets/consumable.json',
+  'mod2/Survival/Objects/Database/ShapeSets/consumable_shared.json',
+  'mod2/Survival/Objects/Database/ShapeSets/decor.json',
+  'mod2/Survival/Objects/Database/ShapeSets/fittings.json',
+  'mod2/Survival/Objects/Database/ShapeSets/industrial.json',
+  'mod2/Survival/Objects/Database/ShapeSets/interactive.json',
+  'mod2/Survival/Objects/Database/ShapeSets/interactivecontainers.json',
+  'mod2/Survival/Objects/Database/ShapeSets/interactivecontainers_shared.json',
+  'mod2/Survival/Objects/Database/ShapeSets/outfitpackage.json',
+  'mod2/Survival/Objects/Database/ShapeSets/plantables.json',
+  'mod2/Survival/Objects/Database/ShapeSets/resources.json',
+  'mod2/Survival/Objects/Database/ShapeSets/spaceship.json',
+  'mod2/Survival/Objects/Database/ShapeSets/vehicle.json',
+  'mod2/Survival/Objects/Database/ShapeSets/warehouse.json',
 ]
 
-const PREFIX = 'mod2/Survival/Objects/Database/ShapeSets/'
-
 async function handleOne(filename) {
-  filename = PREFIX + filename;
-
   const json = await readFile(filename, 'utf8');
   const obj = JSON.parse(json);
   const key = Object.keys(obj)[0];

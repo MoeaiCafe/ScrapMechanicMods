@@ -21,7 +21,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "fcf0958c-084d-4854-9b1b-b06594b4262a",
@@ -43,7 +43,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "40e8bd0d-04a0-4e95-b593-4038b54b156f",
@@ -66,7 +66,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "3440440b-d362-4473-aa03-b7c41e1fe7ad",
@@ -89,7 +89,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 20
+			"stackSize": 5000
 		},
 		{
 			"uuid": "fe8bfeba-850b-4827-9785-10e2468c9c23",
@@ -112,7 +112,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 10,
+			"stackSize": 5000,
 			"restrictions": {
 				"paintable": false
 			}
@@ -137,7 +137,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "fb0f128c-e607-4c52-9c25-f44dfd2dd95e",
@@ -160,7 +160,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "388adeab-67e5-4901-afe8-c56217754510",
@@ -183,7 +183,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c9396a42-67c3-4fa3-b682-31428ff9eced",
@@ -207,7 +207,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 20
+			"stackSize": 5000
 		},
 		{
 			"uuid": "36335664-6e61-4d44-9876-54f9660a8565",
@@ -229,7 +229,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "1147e59d-6940-42b4-840b-07f05054f5e0",
@@ -252,7 +252,7 @@
 				"buoyancy": 3
 			},
 			"flammable": true,
-			"stackSize": 20
+			"stackSize": 5000
 		}
 	]
 }
