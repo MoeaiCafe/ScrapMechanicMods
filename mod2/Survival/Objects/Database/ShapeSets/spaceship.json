@@ -58,7 +58,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "b3761216-dfc4-4679-960b-00f5ae5f8258",
@@ -105,7 +106,7 @@
 				"buoyancy": 1
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "1df6f1af-fd39-443a-9fd7-dd389e0ba5c8",
@@ -141,7 +142,8 @@
 				"friction": 3,
 				"buoyancy": 1
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "1aac8942-38ac-4a83-bc16-6d33436c0934",
@@ -187,7 +189,8 @@
 				"friction": 3,
 				"buoyancy": 3
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "10079046-6400-42fd-bcd6-f66af6cfd8b8",
@@ -231,7 +234,8 @@
 				"friction": 3,
 				"buoyancy": 3
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "98ef8fca-d4a3-4b9a-8699-0630b003b9fa",
@@ -275,7 +279,8 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "2c90e412-9476-40d9-a440-228c888186bd",
@@ -321,7 +326,8 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "31c38d38-73f5-47ef-93c8-e10d4f579e1c",
@@ -358,7 +364,8 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "4f5092dd-e2e5-4d42-8ec9-c0337cf23e21",
@@ -395,7 +402,8 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "5f5926f5-1449-49b0-8997-2d5a0df37b21",
@@ -451,7 +459,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "5b628f22-ec0d-448f-a6be-3453950120a4",
@@ -489,7 +498,8 @@
 				"friction": 4,
 				"buoyancy": 4
 			},
-			"flammable": true
+			"flammable": true,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c563df47-9a8a-4338-9fec-06da1218c573",
@@ -526,8 +536,8 @@
 						{
 							"name": "root_jnt",
 							"offset": {
-								"x": 0.0,
-								"y": 1.0,
+								"x": 0,
+								"y": 1,
 								"z": 0.3
 							}
 						},
@@ -574,7 +584,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "d4e6c84c-a493-44b1-81aa-4f4741ea3ed8",
@@ -614,7 +625,8 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": true
+			"flammable": true,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c4aa3807-0806-4202-a36d-b5fa254d3046",
@@ -652,7 +664,8 @@
 				"friction": 5,
 				"buoyancy": 1
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "a7d719f5-e839-4a95-923c-981b4dc21125",
@@ -706,7 +719,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "5d2cdb56-2be8-4a62-8f05-ce5c9c1510ac",
@@ -754,7 +768,7 @@
 			"rotationSet": "PropYZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -764,7 +778,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "4053c30c-6717-47c7-b0a9-177f7b8b30bc",
@@ -803,7 +818,7 @@
 			"rotationSet": "PropYZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -813,7 +828,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c807b38c-52b6-45cf-8cd3-1a46e6a9627f",
@@ -861,7 +877,7 @@
 			"rotationSet": "PropYZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -871,7 +887,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "b3bb8083-d9b5-408d-b45c-49a444efba57",
@@ -919,7 +936,7 @@
 			"rotationSet": "PropYZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -929,7 +946,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "46ac20df-dfbc-434f-aaf3-f34ddc2afb42",
@@ -978,7 +996,7 @@
 			"sticky": "-Y+Y-Z-X+X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -988,7 +1006,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "011c1ffd-7146-4e8d-8c18-17247d768ae2",
@@ -1037,7 +1056,7 @@
 			"sticky": "-Y+Y-Z-X+X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1047,7 +1066,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "6159898f-beb8-4f49-825b-92b0774daa61",
@@ -1096,7 +1116,7 @@
 			"sticky": "-Y+Y-Z-X+X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1106,7 +1126,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "2bc619a3-c884-4e60-9e78-6c04487a48c5",
@@ -1164,7 +1185,7 @@
 			"sticky": "-Y+Y-Z-X+X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1174,7 +1195,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "2448a709-a8ec-4d69-a927-b9ab195cd83f",
@@ -1205,7 +1227,7 @@
 			"rotationSet": "PropYZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1215,7 +1237,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "84d8e6eb-948b-4dd4-ab23-55a64d33eff1",
@@ -1263,7 +1286,7 @@
 			"rotationSet": "PropYZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1273,7 +1296,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "f15b5fa7-6113-4af8-b3e1-b05560ed946a",
@@ -1313,7 +1337,7 @@
 			"sticky": "-Y+Y-Z-X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1323,7 +1347,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "45ee9f5a-cfc0-4f3a-bbe8-09f2ce1dbc4c",
@@ -1372,7 +1397,7 @@
 			"sticky": "-Y+Y-Z-X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1382,7 +1407,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "988b5592-9e53-4782-a058-d26be442bd49",
@@ -1422,7 +1448,7 @@
 			"sticky": "-Y+Y-Z-X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1432,7 +1458,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "90686663-1a3e-479a-b1c4-f81699274f50",
@@ -1472,7 +1499,7 @@
 			"sticky": "-Y+Y-Z-X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1482,7 +1509,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "5ba206c2-d10b-4815-b95b-04be4959ec31",
@@ -1528,7 +1556,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "7fa4ecf6-d8fe-49eb-a950-db1fb4590c4d",
@@ -1574,7 +1603,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "9bdb677f-8033-451f-8bc7-7ae71351c35c",
@@ -1620,7 +1650,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "68d8eeb6-14e4-469b-9ee6-f80ebe1c4be6",
@@ -1666,7 +1697,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "e8cadcb0-9cdf-49d8-bac2-00193e8ac3cc",
@@ -1712,7 +1744,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "def1fe25-a33d-405b-ac04-2c1707c2101b",
@@ -1758,7 +1791,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "4e084e1c-08e9-43de-bc6f-6fd73a9620aa",
@@ -1813,7 +1847,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "aa3e38ef-21aa-4430-ab56-93c367f4f458",
@@ -1853,7 +1888,7 @@
 			"sticky": "-Y+Y-Z-X+X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1863,7 +1898,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "29c5c1eb-a3bd-45ae-b823-aeb28d70593a",
@@ -1903,7 +1939,7 @@
 			"sticky": "-Y+Y-Z",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1913,7 +1949,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "22c526fc-b212-4e4e-af00-1cc69d9129e1",
@@ -1952,7 +1989,7 @@
 			"rotationSet": "PropYNegY",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -1962,7 +1999,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "a79a2bc9-1015-4c25-ab4b-0d4cb715db47",
@@ -2001,7 +2039,7 @@
 			"rotationSet": "PropYNegYZNegX",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -2011,7 +2049,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c5bdb30e-9675-4f8a-8fb9-07e5b98039d4",
@@ -2051,7 +2090,7 @@
 			"sticky": "+Y-Y-Z-X",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -2061,7 +2100,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "196586b5-897f-40f3-926c-b5dfa4f772eb",
@@ -2108,7 +2148,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "66c1ccc6-1a68-40f3-9e10-ee362c3c13bc",
@@ -2155,7 +2196,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "275e4258-ff57-45ae-8e2f-b82204c56d16",
@@ -2202,7 +2244,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "fc4f1fd8-2544-45f0-8e3b-4684bc45e5f9",
@@ -2241,7 +2284,7 @@
 			"rotationSet": "PropZ",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 1000.0,
+			"density": 1000,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -2251,7 +2294,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		},
 		{
 			"uuid": "1f5d8b77-183c-4f8b-83d7-a3940d090926",
@@ -2282,7 +2326,7 @@
 			"rotationSet": "PropYZNegZNegX",
 			"physicsMaterial": "Metal",
 			"ratings": {},
-			"density": 200.0,
+			"density": 200,
 			"restrictions": {
 				"destructable": false,
 				"erasable": false,
@@ -2292,7 +2336,8 @@
 				"liftable": false,
 				"convertibleToDynamic": false,
 				"paintable": false
-			}
+			},
+			"stackSize": 5000
 		}
 	]
 }

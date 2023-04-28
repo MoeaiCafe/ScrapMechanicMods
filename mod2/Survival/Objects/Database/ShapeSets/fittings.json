@@ -35,7 +35,8 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "5888a6dd-59ab-4cd6-86b2-6e68f64674b5",
@@ -73,7 +74,7 @@
 				"buoyancy": 2
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "70a497d6-6bc2-4ee6-a381-0976d68ac980",
@@ -111,7 +112,7 @@
 				"buoyancy": 2
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "b2c933a8-2dfb-479f-a3d9-b87797d5e0c6",
@@ -149,7 +150,7 @@
 				"buoyancy": 2
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "3292878f-4d1e-49e3-a80f-16b710dad42e",
@@ -185,7 +186,8 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "49938942-fbb6-444d-bba6-1fb339ee5cf3",
@@ -223,7 +225,8 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "412dee88-996e-49c2-8b51-5644f659f9b2",
@@ -260,7 +263,8 @@
 				"friction": 7,
 				"buoyancy": 2
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "40c5b3fd-1ac4-47f4-ae61-503e14baf20f",
@@ -297,7 +301,8 @@
 				"friction": 7,
 				"buoyancy": 2
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "63cf0973-b81e-4fe1-ae44-654937e1b0e4",
@@ -343,7 +348,8 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "06fd0e52-f791-43a6-9fbd-5a8a6260f3f2",
@@ -397,7 +403,8 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "41784077-0636-470f-a6df-b868f152af29",
@@ -443,7 +450,8 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "16ed53cc-a45b-4f64-92d4-2db93bf33e1c",
@@ -497,7 +505,8 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "8310f5b9-3394-4723-ac23-f59a21d6e3f3",
@@ -543,7 +552,8 @@
 				"friction": 4,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "9777f897-4cce-4c22-99ce-793aaca9f7c0",
@@ -581,7 +591,8 @@
 				"friction": 6,
 				"buoyancy": 2
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "66c3a5cd-ce37-4b37-916d-ac39a67ad2f5",
@@ -627,7 +638,8 @@
 				"friction": 6,
 				"buoyancy": 3
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "764e94d1-61c0-4fef-9719-5548889e4817",
@@ -663,7 +675,8 @@
 				"friction": 3,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "468650b4-5ff7-4be1-9e75-05ed86fd83e0",
@@ -699,7 +712,8 @@
 				"friction": 3,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "9e9280f7-c9bc-4b86-b788-43f9b48903dd",
@@ -737,7 +751,8 @@
 				"friction": 3,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "e846e3e7-b608-49c9-bbfd-e0bb859e6d3c",
@@ -773,7 +788,8 @@
 				"friction": 3,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "20821431-de44-4d54-8877-60833316104e",
@@ -809,7 +825,8 @@
 				"friction": 3,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "e0f8dc49-c418-403b-a7a1-44bea7ecd3d0",
@@ -845,7 +862,8 @@
 				"friction": 3,
 				"buoyancy": 6
 			},
-			"flammable": false
+			"flammable": false,
+			"stackSize": 5000
 		},
 		{
 			"uuid": "872ae33f-cf02-4959-91d0-ead1dacfd34b",
@@ -892,7 +910,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "838c8d9a-8fc0-4b15-898b-b82bbf8bf2e0",
@@ -939,7 +957,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "85623170-074a-4663-8944-97d131aff495",
@@ -986,7 +1004,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "1b47f36c-7c6e-451c-87b2-34fdf33d6989",
@@ -1033,7 +1051,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		},
 		{
 			"uuid": "c85957a1-c393-4352-ba79-5004bb4f07a2",
@@ -1079,7 +1097,7 @@
 				"buoyancy": 3
 			},
 			"flammable": false,
-			"stackSize": 10
+			"stackSize": 5000
 		}
 	]
 }
