@@ -722,7 +722,7 @@ function CharacterCollision( self, other, vCollisionPosition, vPointVelocitySelf
 	end
 	fallDamage = fFallDamageFraction * ( maxhp or 100 )
 	-- 掉落伤害
-	fallDamage = 1
+	fallDamage = 0
 
 	local isSafeShape = false
 	if type( other ) == "Shape" then
